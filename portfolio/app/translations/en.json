@@ -1,0 +1,5 @@
+{
+  "app.components.AboutMe.header": "This is the AboutMe component !",
+  "app.components.HomePage.header": "This is HomePage component!",
+  "app.components.NotFoundPage.header": "This is NotFoundPage component!"
+}
