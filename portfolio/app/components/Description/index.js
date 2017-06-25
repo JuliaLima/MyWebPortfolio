@@ -39,13 +39,13 @@ class Description extends React.Component { // eslint-disable-line react/prefer-
     super(props);
     this.generateSoftwareLi = this.generateSoftwareLi.bind(this);
     this.generateSoftwareList = this.generateSoftwareList.bind(this);
-    this.generateResponsabilitiesLi = this.generateResponsabilitiesLi.bind(this);
-    this.generateResponsabilitiesList = this.generateSoftwareList.bind(this);
+    this.generateLabelLi = this.generateLabelLi.bind(this);
+    this.generateLabelList = this.generateLabelList.bind(this);
   }
 
   generateSoftwareLi(software) {
     return (
-      <li>{software}</li>
+      <li key={software}>{software}</li>
     );
   }
   
@@ -57,17 +57,17 @@ class Description extends React.Component { // eslint-disable-line react/prefer-
     );
   }
 
+  generateLabelLi(label) {
+    return (
+      <li key={label}>{label}</li>
+    );
+  }
+
   generateLabelList() {
     return (
       <ul>
         {this.props.labels.map(this.generateLabelLi)}
       </ul>
-    );
-  }
-
-    generateLabelLi(labels) {
-    return (
-      <li>{labels}</li>
     );
   }
 

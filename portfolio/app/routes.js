@@ -42,6 +42,22 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+      path: 'TuristicosDetails',
+      name: 'turisticosDetails',
+      getComponent(location, cb) {
+        import('containers/TuristicosDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'DigaDetails',
+      name: 'digaDetails',
+      getComponent(location, cb) {
+        import('containers/DigaDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {

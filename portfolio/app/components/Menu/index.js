@@ -6,26 +6,26 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import Scrollchor from 'react-scrollchor';
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: gray;
   margin-bottom: 2rem;
 
-  span {
+  .nav-link {
     margin-right: 2rem;
     cursor: pointer;
     font-size: 0.8rem;
     text-align: center;
+    text-decoration: none;
+    color: gray;
   }
-
-  span:last-child {
+  .nav-link:last-child {
     margin-right: 0rem;
   }
-
-  span:hover {
+  .nav-link:hover {
     color: white;
   }
 `;
@@ -34,9 +34,9 @@ class Menu extends React.Component { // eslint-disable-line react/prefer-statele
   render() {
     return (
       <Container>
-        <span>About Me</span>
-        <span>My projects</span>
-        <span>Contact</span>
+        <Scrollchor to="aboutMe" className="nav-link">About Me</Scrollchor>
+        <Scrollchor to="myProjects" className="nav-link">My projects</Scrollchor>
+        <Scrollchor to="contact" className="nav-link">Contact</Scrollchor>
       </Container>
     );
   }

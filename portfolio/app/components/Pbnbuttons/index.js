@@ -7,6 +7,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
+import { Link } from 'react-router';
+import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
 
 const Buttons = styled.div`
     width: 100%;
@@ -27,6 +29,10 @@ const Buttons = styled.div`
       margin-left: 1rem;
       margin-right: 1rem;
     }
+
+    .Link {
+      text-decoration: none;
+     }
 `;
 
 const PrevNext = styled.div`
@@ -44,17 +50,24 @@ const Back = styled.div`
 class Pbnbuttons extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <Buttons>
+      <Buttons> 
+        <Link to={this.props.prevProject} className="Link" style={{ color:"white" }}>
             <PrevNext>
                 <FontAwesome name='arrow-left' />
             </PrevNext>
+        </Link>
+        <Link to="/"  className="Link" style={{ color:"black" }}>
             <Back>
                 <FontAwesome name='briefcase'  style={{ paddingRight: "1rem" }}/>
                 Back to Portfolio
             </Back>
+        </Link>   
+        <Link to={this.props.nextProject} className="Link" style={{ color:"white" }}>
             <PrevNext>
                 <FontAwesome name='arrow-right' />
             </PrevNext>
+        </Link>
+            
         </Buttons>
     );
   }

@@ -6,6 +6,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router';
 
 const Container = styled.div`
   position: relative;
@@ -59,6 +60,11 @@ const Text = styled.div`
     padding: 0.5rem 1rem;
     margin-top: 1rem;
   }
+
+  .Link{
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 class Project extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -70,7 +76,7 @@ class Project extends React.Component { // eslint-disable-line react/prefer-stat
           <Text>
             <p><b>{this.props.title}</b></p>
             <span><p><i>{this.props.role}</i></p></span><br />
-            <span className="viewProjectButton">More details</span>
+            <span className="viewProjectButton"><Link to={this.props.Button} className="Link">More details</Link></span>
           </Text>
         </Overlay>
       </Container>

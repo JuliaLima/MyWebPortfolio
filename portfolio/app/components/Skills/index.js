@@ -12,6 +12,15 @@ const List = styled.ul`
   margin: 0rem;
   padding: 0rem;
   width: 100%;
+
+  h5{
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  li{
+    margin-bottom: 0.5rem;
+  }
 `;
 
 
@@ -21,13 +30,13 @@ class Skills extends React.Component { // eslint-disable-line react/prefer-state
       <div>
         <h3>Software and Web Design Skills</h3>
         <List>
-          Adobe Illustrator<br />
+          <h5>Adobe Illustrator</h5>
           <li className="bar effect"></li>
-          Adobe Photoshop<br />
+          <h5>Adobe Photoshop</h5>
           <li className="bar effect"></li>
-          Adobe InDesign<br />
+          <h5>Adobe InDesign</h5>
           <li className="bar effect"></li>
-          HTML<br />
+          <h5>HTML</h5>
           <li className="bar effect"></li>
         </List>
       </div>

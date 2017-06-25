@@ -1,13 +1,13 @@
 /*
  *
- * TuristicosDetails
+ * DigaDetails
  *
  */
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Turisticos from './TuristicosDetails.png';
-import TuristicosColors from './TuristicosColors.png';
+import Diga from './';
+import TuristicosColors from './Colors.png';
 import ImgAndDescription from 'components/ImgAndDescription';
 import Description from 'components/Description';
 import styled from 'styled-components';
@@ -37,24 +37,20 @@ const Title = styled.div`
   margin-top: 2rem;
 `;
 
-export class TuristicosDetails extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class DigaDetails extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const softwareList = [
       "Adobe Illustrator",
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "Abode Photoshop"
     ]
 
     const LabelList = [
-      "UX/UI Design",
-      "Web Design",
-      "Responsive Design"
+      "Graphic Design"
     ]
 
     return (
-      <ProjectDetailsLayout title="TURISTICOS" prevProject="BabyOnlineDetails" nextProject="DigaDetails">
-        <ImgAndDescription img={Turisticos} >
+      <ProjectDetailsLayout title="DiGA (Diseño Grafico para el Autismo)" prevProject="TuristicosDetails" nextProject="TuristicosDetails">
+        <ImgAndDescription img={Diga} >
           <Description
             info="An e-commerce web application developed with a tourism expert and a computer engineer. Its purpose is to sell entretainments, activities, restaurants and trips to tourists at local level. Nowadays it is being used in two cities of Argentina."
             MyWork="Hola"
@@ -70,7 +66,7 @@ export class TuristicosDetails extends React.Component { // eslint-disable-line 
   }
 }
 
-TuristicosDetails.propTypes = {
+DigaDetails.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
@@ -81,4 +77,5 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(null, mapDispatchToProps)(TuristicosDetails);
+export default connect(null, mapDispatchToProps)(DigaDetails);
+

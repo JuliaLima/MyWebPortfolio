@@ -21,10 +21,10 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     return (
       <div>
         <Header />
-        <AboutMe />
-        <Portfolio />
+        <span id="aboutMe"><AboutMe /></span>
+        <span id="myProjects"><Portfolio /></span>
         <Cv />
-        <Footer />
+        <span id="contact"><Footer /></span>
       </div>
     );
   }
