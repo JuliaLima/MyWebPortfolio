@@ -37,8 +37,7 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
         </Title>
         <Info>
           <p>Feel free to get in touch with me if you have any questions or projects coming up. I'd love to hear from you!</p>
-          <FontAwesome name='envelope' style={{ paddingRight: '1rem', color: '#00A79D', fontSize: '1rem' }} />julia.lima.dg@gmail.com<br />
-          <FontAwesome name='mobile' style={{ paddingRight: '1rem', color: '#00A79D', fontSize: '1.5rem' }} />+64 027 5113958<br /><br />
+          <FontAwesome name='envelope' style={{ paddingRight: '1rem', color: '#00A79D', fontSize: '1rem', marginBottom: "2rem" }} />julia.lima.dg@gmail.com<br />
           <span>&copy; 2017 - Julia Lima. All rights reserved.</span>
         </Info>
       </Section>

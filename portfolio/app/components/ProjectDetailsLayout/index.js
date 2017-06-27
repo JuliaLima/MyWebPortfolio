@@ -31,7 +31,7 @@ const Copyright = styled.span`
 `;
 
 const Title = styled.div`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-top: 2rem;
 `;

@@ -58,8 +58,7 @@ class Pbnbuttons extends React.Component { // eslint-disable-line react/prefer-s
         </Link>
         <Link to="/"  className="Link" style={{ color:"black" }}>
             <Back>
-                <FontAwesome name='briefcase'  style={{ paddingRight: "1rem" }}/>
-                Back to Portfolio
+                <FontAwesome name='home' />
             </Back>
         </Link>   
         <Link to={this.props.nextProject} className="Link" style={{ color:"white" }}>

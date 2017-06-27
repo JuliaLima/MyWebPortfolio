@@ -12,6 +12,7 @@
 import React from 'react';
 import Header from 'components/Header';
 import AboutMe from 'components/AboutMe';
+import Skills from 'components/Skills';
 import Portfolio from 'components/Portfolio';
 import Cv from 'components/Cv';
 import Footer from 'components/Footer';
@@ -22,6 +23,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
       <div>
         <Header />
         <span id="aboutMe"><AboutMe /></span>
+        <Skills />
         <span id="myProjects"><Portfolio /></span>
         <Cv />
         <span id="contact"><Footer /></span>

@@ -8,8 +8,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Turisticos from './TuristicosDetails.png';
 import TuristicosColors from './TuristicosColors.png';
-import ImgAndDescription from 'components/ImgAndDescription';
-import Description from 'components/Description';
+import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
 
@@ -42,29 +41,38 @@ export class TuristicosDetails extends React.Component { // eslint-disable-line 
     const softwareList = [
       "Adobe Illustrator",
       "HTML",
-      "CSS",
-      "JavaScript"
+      "CSS"
     ]
 
     const LabelList = [
       "UX/UI Design",
-      "Web Design",
-      "Responsive Design"
+      "UX Research",
+      "Interaction Design",
+      "Responsive Design",
+      "Brand Design"
+    ]
+
+    const Process = [
+      "Research",
+      "Understanding",
+      "Design",
+      "Prototypes",
+      "Tests"
     ]
 
     return (
-      <ProjectDetailsLayout title="TURISTICOS" prevProject="BabyOnlineDetails" nextProject="DigaDetails">
-        <ImgAndDescription img={Turisticos} >
-          <Description
-            info="An e-commerce web application developed with a tourism expert and a computer engineer. Its purpose is to sell entretainments, activities, restaurants and trips to tourists at local level. Nowadays it is being used in two cities of Argentina."
-            MyWork="Hola"
-            software={softwareList}
-            colorpaletteimg={TuristicosColors}
-            labels={LabelList}
-            strategy="hola"
-            link="View Live Site"
-            />
-        </ImgAndDescription>
+      <ProjectDetailsLayout title="TURÍSTICOS" prevProject="BabyOnlineDetails" nextProject="DigaDetails">
+        <ProjectsDescription
+          img={Turisticos}
+          paragraph="An e-commerce web application which purpose is to sell entretainments, activities, restaurants and trips to tourists at local level. Nowadays it is being used in two cities of Argentina (Córdoba and Bariloche) and is continually improving the usability and experience of current users."
+          stepTitle={Process}
+          ProcessParagraph="Collaborate closely with the team by providing product definitions and user flows, UI scketching using HTML and CSS, conducting user research and evaluating user feedback."
+          software={softwareList}
+          colorpaletteimg={TuristicosColors}
+          labels={LabelList}
+          linkButton="View Live Site"
+          link="http://vcp.turisticos.com.ar/login"
+        />
       </ProjectDetailsLayout>
     );
   }

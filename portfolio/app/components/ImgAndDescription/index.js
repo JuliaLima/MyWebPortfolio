@@ -11,25 +11,24 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 const Div = styled.div`
-  width: 50%;
-  text-align: center;
+  width: 30%;
+  text-align: left;
 `;
 
 const Img = styled.img`
-  width: 100%;
-  padding: 2rem;
+  width: 80%;
+  margin: 0rem;
 `;
 
 const Description = styled.p`
     margin: 0rem;
-    padding: 2rem;
+    width: 70%;
+    padding: 0rem 2rem;
     text-align: left;
-    padding-top: 2rem;
 `;
 
 class ImgAndDescription extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -39,11 +38,9 @@ class ImgAndDescription extends React.Component { // eslint-disable-line react/p
         <Div>
           <Img src={this.props.img} />
         </Div>
-        <Div>
-          <Description>
-            {this.props.children}
-          </Description>
-        </Div>
+        <Description>
+          {this.props.children}
+        </Description>
       </Container>
     );
   }

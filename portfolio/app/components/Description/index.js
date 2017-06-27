@@ -7,7 +7,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-  const Link = styled.span`
+  const LinkButton = styled.span`
     background-color: #EE2A7B;
     padding: 0.5rem 1rem;
     color: white;
@@ -17,7 +17,6 @@ import styled from 'styled-components';
     text-decoration: underline;
     list-style-type: none;
     color: gray;
-    cursor: pointer;
 
     ul {
       list-style: none;
@@ -41,6 +40,7 @@ class Description extends React.Component { // eslint-disable-line react/prefer-
     this.generateSoftwareList = this.generateSoftwareList.bind(this);
     this.generateLabelLi = this.generateLabelLi.bind(this);
     this.generateLabelList = this.generateLabelList.bind(this);
+    this.ShowLinkButton = this.ShowLinkButton.bind(this);
   }
 
   generateSoftwareLi(software) {
@@ -71,15 +71,30 @@ class Description extends React.Component { // eslint-disable-line react/prefer-
     );
   }
 
+  ShowLinkButton() {
+    console.log("akjaskj", this.props.linkButton)
+    if (!!this.props.linkButton) {
+      console.log("not empty")
+      return (
+        <a href={this.props.link} target="_blank" style={{ textDecoration: "none"}}>
+          <LinkButton>{this.props.linkButton}</LinkButton>
+        </a>
+      )
+    } else {
+      console.log("empty")
+      return null
+    }
+  }
+
   render() {
     return (
       <div className="black">
         <div>{this.props.info}</div><br />
-        <div><b>{this.props.MyWork}</b></div><br />
-        <div><b>Strategy:</b><br />{this.props.strategy}</div><br />
+        <div style={{ fontWeight:"bold", fontStyle:"italic", textAlign:"center", width:"80%", marginLeft:"auto", marginRight:"auto" }}>{this.props.MyWork}</div><br />
+        <div><b>Process:</b><br />{this.props.strategy}</div><br />
         <div><b>Software / Web Design:</b><br />{this.generateSoftwareList()}</div><br />
         <div><b>Color Palette:</b><br /><img src={this.props.colorpaletteimg} /></div><br />
-        <Link>{this.props.link}</Link><br /><br />
+        {this.ShowLinkButton()}<br /><br />
         <Label>{this.generateLabelList()}</Label><br />
       </div>
     );

@@ -76,7 +76,7 @@ class Project extends React.Component { // eslint-disable-line react/prefer-stat
           <Text>
             <p><b>{this.props.title}</b></p>
             <span><p><i>{this.props.role}</i></p></span><br />
-            <span className="viewProjectButton"><Link to={this.props.Button} className="Link">More details</Link></span>
+            <Link to={this.props.Button} className="Link"><span className="viewProjectButton">More details</span></Link>
           </Text>
         </Overlay>
       </Container>

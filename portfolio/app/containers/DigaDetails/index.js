@@ -6,36 +6,20 @@
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Diga from './';
+import Diga from './Diga.png';
+import gall1 from './gall1.png';
+import gall2 from './gall2.png';
+import gall3 from './gall3.png';
+import gall4 from './gall4.png';
+import gall5 from './gall5.png';
+import gall6 from './gall6.png';
+import gall7 from './gall7.png';
+import gall8 from './gall8.png';
+import gall9 from './gall9.png';
 import TuristicosColors from './Colors.png';
-import ImgAndDescription from 'components/ImgAndDescription';
-import Description from 'components/Description';
+import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
-
-const Header = styled.div`
-  background-color: #00A79D;
-  text-align: center;
-  width: 100%;
-  height: 50vh;
-  padding-top: 1.5rem;
-`;
-
-const Copyright = styled.span`
-    color: gray;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 0.6rem;
-    padding: 1rem 0rem;
-    background-color: white;
-`;
-
-const Title = styled.div`
-  font-size: 4rem;
-  font-weight: bold;
-  margin-top: 2rem;
-`;
 
 export class DigaDetails extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -45,22 +29,42 @@ export class DigaDetails extends React.Component { // eslint-disable-line react/
     ]
 
     const LabelList = [
-      "Graphic Design"
+      "Graphic Design",
+      "User-centered Design",
+      "Autism Spectrum Disorder",
+      "Communication"
+    ]
+
+    const Process = [
+      "Research",
+      "Understanding",
+      "Design",
+      "Prototypes",
+      "Tests"
     ]
 
     return (
-      <ProjectDetailsLayout title="DiGA (Diseño Grafico para el Autismo)" prevProject="TuristicosDetails" nextProject="TuristicosDetails">
-        <ImgAndDescription img={Diga} >
-          <Description
-            info="An e-commerce web application developed with a tourism expert and a computer engineer. Its purpose is to sell entretainments, activities, restaurants and trips to tourists at local level. Nowadays it is being used in two cities of Argentina."
-            MyWork="Hola"
-            software={softwareList}
-            colorpaletteimg={TuristicosColors}
-            labels={LabelList}
-            strategy="hola"
-            link="View Live Site"
-            />
-        </ImgAndDescription>
+      <ProjectDetailsLayout title="DiGA (Diseño Gráfico para el Autismo)" prevProject="TuristicosDetails" nextProject="EvergreenDetails">
+        <ProjectsDescription
+          img={Diga}
+          paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."
+          stepTitle={Process}
+          ProcessParagraph="Being a project realized from a design perspective, it was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
+          gallery1={gall6}
+          gallery2={gall4}
+          gallery3={gall8}
+          gallery4={gall3}
+          gallery5={gall9}
+          gallery6={gall7}
+          gallery7={gall1}
+          gallery8={gall2}
+          gallery9={gall5}
+          software={softwareList}
+          colorpaletteimg={TuristicosColors}
+          labels={LabelList}
+          linkButton="View PDF"
+          link="https://drive.google.com/drive/u/0/folders/0B5CCgrQZ517CTGI1MnExcVM1bEE"
+        />
       </ProjectDetailsLayout>
     );
   }

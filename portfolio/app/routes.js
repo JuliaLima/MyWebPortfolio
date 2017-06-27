@@ -58,6 +58,94 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+      path: 'EvergreenDetails',
+      name: 'evergreenDetails',
+      getComponent(location, cb) {
+        import('containers/EvergreenDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'RefugioDetails',
+      name: 'refugioDetails',
+      getComponent(location, cb) {
+        import('containers/RefugioDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'ElMundoDetails',
+      name: 'elMundoDetails',
+      getComponent(location, cb) {
+        import('containers/ElMundoDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'PamelaCayonDetails',
+      name: 'pamelaCayonDetails',
+      getComponent(location, cb) {
+        import('containers/PamelaCayonDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'RallyDetails',
+      name: 'rallyDetails',
+      getComponent(location, cb) {
+        import('containers/RallyDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'AdrianDetails',
+      name: 'adrianDetails',
+      getComponent(location, cb) {
+        import('containers/AdrianDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'ReySolDetails',
+      name: 'reySolDetails',
+      getComponent(location, cb) {
+        import('containers/ReySolDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'CenterDetails',
+      name: 'centerDetails',
+      getComponent(location, cb) {
+        import('containers/CenterDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'MagazineDetails',
+      name: 'magazineDetails',
+      getComponent(location, cb) {
+        import('containers/MagazineDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'TicxDetails',
+      name: 'ticxDetails',
+      getComponent(location, cb) {
+        import('containers/TicxDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'SocialClubDetails',
+      name: 'socialClubDetails',
+      getComponent(location, cb) {
+        import('containers/SocialClubDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
