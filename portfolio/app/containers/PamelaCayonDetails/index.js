@@ -65,7 +65,7 @@ export class PamelaCayonDetails extends React.Component { // eslint-disable-line
     ]
 
     return (
-      <ProjectDetailsLayout title="PAMELA CAYON" prevProject="ElMundoDetails" nextProject="RallyDetails">
+      <ProjectDetailsLayout title="PAMELA CAYON" prevProject="LaPedreraDetails" nextProject="RallyDetails">
          <ProjectsDescription
           img={PamelaCayon}
           paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."

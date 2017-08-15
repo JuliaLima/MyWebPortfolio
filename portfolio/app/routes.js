@@ -130,10 +130,10 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: 'TicxDetails',
-      name: 'ticxDetails',
+      path: 'LaPedreraDetails',
+      name: 'LaPedreraDetails',
       getComponent(location, cb) {
-        import('containers/TicxDetails')
+        import('containers/LaPedreraDetails')
           .then(loadModule(cb))
           .catch(errorLoading);
       },

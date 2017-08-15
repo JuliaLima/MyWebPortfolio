@@ -64,7 +64,7 @@ export class ElMundoDetails extends React.Component { // eslint-disable-line rea
     ]
 
     return (
-      <ProjectDetailsLayout title="EL MUNDO RESTAURANT" prevProject="RefugioDetails" nextProject="PamelaCayonDetails">
+      <ProjectDetailsLayout title="EL MUNDO RESTAURANT" prevProject="RefugioDetails" nextProject="LaPedreraDetails">
          <ProjectsDescription
           img={ElMundo}
           paragraph="El Mundo is one of the most important restaurants in the city of Villa Carlos Paz (Argentina) characterized by having one of the most typical and best  menu of the region, the 'chivito' (goat meat)."
