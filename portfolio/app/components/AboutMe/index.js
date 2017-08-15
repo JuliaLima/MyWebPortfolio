@@ -33,7 +33,7 @@ class AboutMe extends React.Component { // eslint-disable-line react/prefer-stat
         </Title>
         <ImgAndDescription img={Me}>
           <h1>Hi! I'm Julia.</h1>
-          <h2>27 year-old graphic designer born in Argentina, living in New Zealand. I'm really interested on the UI/UX design field and looking forward to push my career onto that path.</h2>
+          <h2 style={{ color:"#00A79D" }}>27 year-old graphic designer born in Argentina, living in New Zealand. I'm really interested on the UI/UX design field and looking forward to push my career onto that path.</h2>
           <Text>
             <li>
               I do not remember how it all started, but I always liked being <b>creative</b>. As a kid I used to spend hours drawing, painting, doing crafts and dedicating a lot of time and effort to letters or cards I gave to my loved ones.<br /><br />
