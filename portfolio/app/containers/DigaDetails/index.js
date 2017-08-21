@@ -25,7 +25,7 @@ export class DigaDetails extends React.Component { // eslint-disable-line react/
   render() {
     const softwareList = [
       "Adobe Illustrator",
-      "Abode Photoshop"
+      "Adobe InDesign"
     ]
 
     const LabelList = [

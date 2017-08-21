@@ -48,16 +48,15 @@ export class TuristicosDetails extends React.Component { // eslint-disable-line 
       "UX/UI Design",
       "UX Research",
       "Interaction Design",
-      "Responsive Design",
-      "Brand Design"
+      "Responsive Design"
     ]
 
     const Process = [
-      "Research",
-      "Understanding",
-      "Design",
-      "Prototypes",
-      "Tests"
+      "Definitions",
+      "Sketching",
+      "Implementation",
+      "Presentation",
+      "Feedback"
     ]
 
     return (
@@ -66,7 +65,7 @@ export class TuristicosDetails extends React.Component { // eslint-disable-line 
           img={Turisticos}
           paragraph="An e-commerce web application which purpose is to sell entretainments, activities, restaurants and trips to tourists at local level. Nowadays it is being used in two cities of Argentina (Córdoba and Bariloche) and is continually improving the usability and experience of current users."
           stepTitle={Process}
-          ProcessParagraph="Collaborate closely with the team by providing product definitions and user flows, UI scketching using HTML and CSS, conducting user research and evaluating user feedback."
+          ProcessParagraph="Freelance project. The team consists of a developer, a tourism expert and a graphic designer. It was started by defining the need and making a tentative proposal of the solution knowing that it would be able to change taking into account that an iterative design was followed permanently. The next step was to think and develop UI's through wireframes and interaction schemes. Once the team agreed, sketching and coding started. It was decided to finish the implementation in a point where the features were sufficiently useful and functional, so the product was released in its version 1 (August 2016). Once the application was delivered and started to be used, it was taken into account user's feedback and certain aspects were improved based on the constructive criticisms obtained. Currently the product is being used normally and in a few months a second version with more and new features will be launched."
           software={softwareList}
           colorpaletteimg={TuristicosColors}
           labels={LabelList}

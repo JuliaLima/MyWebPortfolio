@@ -28,7 +28,6 @@ export class EvergreenDetails extends React.Component { // eslint-disable-line r
       "UI Design",
       "UI Style Guide",
       "Design Principles",
-      "Web App",
       "Libraries"
     ]
 

@@ -49,18 +49,17 @@ export class ElMundoDetails extends React.Component { // eslint-disable-line rea
     ]
 
     const LabelList = [
-      "UI Design",
-      "UI Style Guide",
-      "Design Principles",
-      "Web App"
+      "Comunity Management",
+      "Graphic Design",
+      "Banners",
+      "Flyers"
     ]
 
     const Process = [
-      "Research",
-      "Understanding",
-      "Design",
-      "Prototypes",
-      "Tests"
+      "Need",
+      "Definition",
+      "Proposal",
+      "Implementation"
     ]
 
     return (

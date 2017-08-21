@@ -59,7 +59,7 @@ export class MagazineDetails extends React.Component { // eslint-disable-line re
     ]
 
     return (
-      <ProjectDetailsLayout title="MAGAZINE" prevProject="CenterDetails" nextProject="TicxDetails">
+      <ProjectDetailsLayout title="MAGAZINE" prevProject="CenterDetails" nextProject="SocialClubDetails">
         <ProjectsDescription
           img={Magazine}
           paragraph="The objective of this work was to make visually attractive a university investigation made by students of the computer engineering career of Facultad de Ciencias Exactas, Físicas y Naturales - UNC (Argentina)."

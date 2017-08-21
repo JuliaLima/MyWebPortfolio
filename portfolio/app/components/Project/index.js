@@ -10,7 +10,7 @@ import { Link } from 'react-router';
 
 const Container = styled.div`
   position: relative;
-  width: 20%;
+  width: 33%;
 `;
 
 const Img = styled.img`
@@ -29,9 +29,9 @@ const Overlay = styled.div`
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: black;
 
   &:hover {
+    background-color: black;
     opacity: 1;
   }
 `;
@@ -40,6 +40,7 @@ const Text = styled.div`
     color: white;
     font-size: 20px;
     position: absolute;
+    z-index: 1000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
