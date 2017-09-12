@@ -9,8 +9,6 @@ import { connect } from 'react-redux';
 import Center from './CenterDetails.png';
 import CenterColors from './CenterColors.png';
 import gall1 from './CenterDetails.png';
-import gall2 from './CenterDetails.png';
-import gall3 from './CenterDetails.png';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
 import ProjectsDescription from 'components/ProjectsDescription';
@@ -37,6 +35,10 @@ export class CenterDetails extends React.Component { // eslint-disable-line reac
       "Tests"
     ]
 
+    const ImagesArray = [
+      gall1
+    ]
+
     return (
       <ProjectDetailsLayout title="HOTEL CENTER" prevProject="ReySolDetails" nextProject="MagazineDetails">
         <ProjectsDescription
@@ -44,9 +46,7 @@ export class CenterDetails extends React.Component { // eslint-disable-line reac
           paragraph="Website (Design + Development) for a hotel in the city of Villa Carlos Paz (Argentina). Work done jointly with two developers."
           stepTitle={Process}
           ProcessParagraph="Notice the need to own a website to reach more people"
-          gallery1={gall1}
-          gallery2={gall2}
-          gallery3={gall3}
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={CenterColors}
           labels={LabelList}

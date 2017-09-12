@@ -9,8 +9,6 @@ import { connect } from 'react-redux';
 import Adrian from './AdrianDetails.png';
 import AdrianColors from './AdrianColors.png';
 import gall1 from './AdrianDetails.png';
-import gall2 from './AdrianDetails.png';
-import gall3 from './AdrianDetails.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
 import styled from 'styled-components';
@@ -37,6 +35,12 @@ export class AdrianDetails extends React.Component { // eslint-disable-line reac
       "Tests"
     ]
 
+    const ImagesArray = [
+      gall1,
+      gall1,
+      gall1
+    ]
+
     return (
       <ProjectDetailsLayout title="ADRIÁN DE LAS SIERRAS EVT" prevProject="RallyDetails" nextProject="ReySolDetails">
         <ProjectsDescription
@@ -44,9 +48,7 @@ export class AdrianDetails extends React.Component { // eslint-disable-line reac
           paragraph="Adrián de las Sierras EVT is a travel and tourism agency that sells touristic packages at a wholesale and a retail level in Villa Carlos Paz (Argentina)."
           stepTitle={Process}
           ProcessParagraph="Provide a system that allows information to be permanently updated in an easy way."
-          gallery1={gall1}
-          gallery2={gall2}
-          gallery3={gall3}
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={AdrianColors}
           labels={LabelList}

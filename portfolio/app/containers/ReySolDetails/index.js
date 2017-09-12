@@ -60,6 +60,13 @@ export class ReySolDetails extends React.Component { // eslint-disable-line reac
       "Tests"
     ]
 
+    const ImagesArray = [
+      gall1,
+      gall2,
+      gall3,
+      gall4
+    ]
+
     return (
       <ProjectDetailsLayout title="REYSOL CABAÑAS" prevProject="AdrianDetails" nextProject="CenterDetails">
         <ProjectsDescription
@@ -68,12 +75,7 @@ export class ReySolDetails extends React.Component { // eslint-disable-line reac
           stepTitle={Process}
           ProcessParagraph="BRANDING: The literal translation of the name is 'KingSun', so the logo will be composed and have a direct reference to the name of the business.
             CASUAL DESIGNS: The owners asked in different and specific opportunities for help with some graphic pieces. Digital banners were designed for Christmas time, guides to inform and locate the tourists that were lodged in the cabins and even a magnet as a souvenir with contact details of the place."
-          gallery1={gall1}
-          gallery2={gall2}
-          gallery3={gall3}
-          gallery4={gall4}
-          gallery5={gall4}
-          gallery6={gall4}
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={ReySolColors}
           labels={LabelList}

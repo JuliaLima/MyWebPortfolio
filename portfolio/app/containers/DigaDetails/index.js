@@ -43,6 +43,18 @@ export class DigaDetails extends React.Component { // eslint-disable-line react/
       "Tests"
     ]
 
+    const ImagesArray = [
+      gall1,
+      gall2,
+      gall3,
+      gall4,
+      gall5,
+      gall6,
+      gall7,
+      gall8,
+      gall9
+    ]
+
     return (
       <ProjectDetailsLayout title="DiGA (Diseño Gráfico para el Autismo)" prevProject="TuristicosDetails" nextProject="EvergreenDetails">
         <ProjectsDescription
@@ -50,15 +62,7 @@ export class DigaDetails extends React.Component { // eslint-disable-line react/
           paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."
           stepTitle={Process}
           ProcessParagraph="Being a project realized from a design perspective, it was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
-          gallery1={gall6}
-          gallery2={gall4}
-          gallery3={gall8}
-          gallery4={gall3}
-          gallery5={gall9}
-          gallery6={gall7}
-          gallery7={gall1}
-          gallery8={gall2}
-          gallery9={gall5}
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={TuristicosColors}
           labels={LabelList}

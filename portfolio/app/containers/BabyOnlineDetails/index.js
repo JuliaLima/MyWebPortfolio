@@ -34,9 +34,19 @@ export class BabyOnlineDetails extends React.Component { // eslint-disable-line 
     ]
     
     const Process = [
+      "Requirement",
       "Proposal",
       "Feedback",
       "Design"
+    ]
+
+    const ImagesArray = [
+      gall1,
+      gall2,
+      gall3,
+      gall4,
+      gall5,
+      gall6
     ]
 
     return (
@@ -46,12 +56,7 @@ export class BabyOnlineDetails extends React.Component { // eslint-disable-line 
           paragraph="BabyOnline (a division of Waysoft Ltd.) is one of the leaders in the disposable nappies market in New Zealand. They also specialize in ´everything Baby´ like nappies, mummy bags, pacifiers, prams and toys. The company publishes digital banners on its website to communicate to its customers discounts, new arrivals and special promotions. They also need eventual designs such as boxes, labels and photographs."
           stepTitle={Process}
           ProcessParagraph="Design requirements are usually simple and similar. A proposal is submitted, feedback is obtained and improvements or changes are made. Once a satisfactory result is achieved, the final piece is produced or published on the web depending on its nature (physical or digital)."
-          gallery1={gall1}
-          gallery2={gall5}
-          gallery3={gall3}
-          gallery4={gall4}
-          gallery5={gall6}
-          gallery6={gall2}
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={BabyOnlineColors}
           labels={LabelList}

@@ -59,22 +59,26 @@ export class ElMundoDetails extends React.Component { // eslint-disable-line rea
       "Need",
       "Definition",
       "Proposal",
-      "Implementation"
+      "Launching"
+    ]
+
+    const ImagesArray = [
+      gall1,
+      gall2,
+      gall3,
+      gall4,
+      gall5,
+      gall6
     ]
 
     return (
       <ProjectDetailsLayout title="EL MUNDO RESTAURANT" prevProject="RefugioDetails" nextProject="LaPedreraDetails">
          <ProjectsDescription
           img={ElMundo}
-          paragraph="El Mundo is one of the most important restaurants in the city of Villa Carlos Paz (Argentina) characterized by having one of the most typical and best  menu of the region, the 'chivito' (goat meat)."
+          paragraph="El Mundo is a traditional restaurant in the city of Villa Carlos Paz (Argentina) with many years of experience and great quality. The need was to make an important campaign to promote it during low tourist seasons."
           stepTitle={Process}
-          ProcessParagraph="Being a project realized from a design perspective, it was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
-          gallery1={gall1}
-          gallery2={gall2}
-          gallery3={gall3}
-          gallery4={gall4}
-          gallery5={gall6}
-          gallery6={gall5}
+          ProcessParagraph="Once raised the need to promote the restaurant highlighting its trajectory, quality and promotions, a detailed strategy was designed including publications in social networks (Facebook, Instagram and Twitter), flyers and radio advertising. The central idea of the campaign was to generate a link with customers maintaining an attitude of warmth and confidence while strengthening the already created with frequent diners."
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={ElMundoColors}
           labels={LabelList}

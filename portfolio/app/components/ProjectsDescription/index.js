@@ -123,6 +123,7 @@ class ProjectsDescription extends React.PureComponent { // eslint-disable-line r
     this.generateSoftwareList = this.generateSoftwareList.bind(this);
     this.generateLabelLi = this.generateLabelLi.bind(this);
     this.generateLabelList = this.generateLabelList.bind(this);
+    this.generateGallery = this.generateGallery.bind(this);
     this.ShowLinkButton = this.ShowLinkButton.bind(this);
   }
 
@@ -152,6 +153,21 @@ class ProjectsDescription extends React.PureComponent { // eslint-disable-line r
         {this.props.labels.map(this.generateLabelLi)}
       </ul>
     );
+  }
+
+  generateGallery() {
+    const { images } = this.props;
+
+    if(!images) {
+      return null;
+    }
+
+    return (
+      <Gallery>
+        { images.map( image => (<img src={image} />) ) }
+      </Gallery>
+    );
+
   }
 
   ShowLinkButton() {
@@ -186,17 +202,7 @@ class ProjectsDescription extends React.PureComponent { // eslint-disable-line r
             />
             <p>{this.props.ProcessParagraph}</p>
         </Process>
-        <Gallery>
-          <img src={this.props.gallery1} />
-          <img src={this.props.gallery2} />
-          <img src={this.props.gallery3} />
-          <img src={this.props.gallery4} />
-          <img src={this.props.gallery5} />
-          <img src={this.props.gallery6} />
-          <img src={this.props.gallery7} />
-          <img src={this.props.gallery8} />
-          <img src={this.props.gallery9} />
-        </Gallery>
+        { this.generateGallery() }
         <ExtraInfo>
           <div style={{ marginBottom:"2rem" }} >
             <span>

@@ -50,20 +50,24 @@ export class RefugioDetails extends React.Component { // eslint-disable-line rea
     ]
 
     const Process = [
+      "Problem",
       "Research",
-      "Understanding",
-      "Design",
-      "Prototypes",
-      "Tests"
+      "Proposal",
+      "Design"
+    ]
+
+    const ImagesArray = [
+     
     ]
 
     return (
       <ProjectDetailsLayout title="CURA BROCHERO" prevProject="EvergreenDetails" nextProject="ElMundoDetails">
         <ProjectsDescription
           img={Refugio}
-          paragraph="Cura Brochero is a night refuge that lodges people in street situation in the city of Villa Carlos Paz (Argentina). Being a non-profit organization needs a lot of help from the community including the communication of its existence and action"
+          paragraph="Cura Brochero is a night refuge that lodges people in street situation in the city of Villa Carlos Paz (Argentina). Being a non-profit organization needs a lot of help from the community including the communication of its existence and action. Their income comes mainly from the collection and subsequent sale of paper and cardboard, a complex task that requires the help of the whole community."
           stepTitle={Process}
-          ProcessParagraph="Design a complete brand taking into account that the pieces and implementation must cost as low as possible. The pieces developed were: institutional stationery, business card, bookmarc, postcards, flyers and sign."
+          ProcessParagraph="Detection of the problem: many people in the community do not know the existence of this place with great purpose. This implies that the institution has problems of communication and to reverse it, an intense investigation was carried out to be able to propose a system of communication that suits the economic needs and possibilities. A complete brand was designed knowing that pieces and implementation must cost as low as possible taking into account their source of income: paper and cardboard. The pieces developed were: institutional stationery, business card, bookmark, postcards, flyers and sign."
+          images={ImagesArray}
           software={softwareList}
           colorpaletteimg={RefugioColors}
           labels={LabelList}

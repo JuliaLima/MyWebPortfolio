@@ -41,8 +41,8 @@ class AboutMe extends React.Component { // eslint-disable-line react/prefer-stat
               At the beginning of 2009 I found myself studying a career that had never occurred to me in the previous years but from day zero made me understand who I was and, therefore, who I wanted to be: a <b>graphic designer</b>.<br />
             </li>
             <li>
-              In 2016 I obtained a bachelor degree in Graphic Design from Universidad Provincial de Córdoba (Argentina). From 2012, I have successfully designed solutions for print media and the IT industry, including <b>websites, web apps UX/UI , logos, posters, business cards, marketing materials like flyers, banners and brochures</b>. My work experience includes working in an <b>agency</b> and several <b>freelance</b> projects.<br /><br />
-              I am <b>passionate, dedicated, hardworking and very responsible</b>. I put a lot of attention in <b>details</b>. I embrace change, my life philosophy is to learn something new every day and that can only happen if I'm open to experience <b>new things</b>.
+              In 2016 I obtained a bachelor degree in Graphic Design from Universidad Provincial de Córdoba (Argentina). From 2012, I have successfully designed solutions for print media and the IT industry, including <b>websites, web apps UX/UI , logos, business cards, flyers, banners and brochures</b>. My work experience includes working in an <b>agency</b> and several <b>freelance</b> projects.<br /><br />
+              I am <b>passionate, dedicated, hardworking and very responsible</b>. I put a lot of attention in <b>details</b>. My life philosophy is to learn something new every day and that can only happen if I'm open to experience <b>new things</b>.
             </li>
           </Text>
         </ImgAndDescription>
