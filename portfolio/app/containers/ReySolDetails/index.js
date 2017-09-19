@@ -68,7 +68,7 @@ export class ReySolDetails extends React.Component { // eslint-disable-line reac
     ]
 
     return (
-      <ProjectDetailsLayout title="REYSOL CABAÑAS" prevProject="AdrianDetails" nextProject="CenterDetails">
+      <ProjectDetailsLayout title="REYSOL CABAÑAS" prevProject="RallyDetails" nextProject="MagazineDetails">
         <ProjectsDescription
           img={ReySol}
           paragraph="Design of an identifying sign and application of it in a series of graphic pieces for cabins in temporary rent located in Villa Carlos Paz city (Argentina)."

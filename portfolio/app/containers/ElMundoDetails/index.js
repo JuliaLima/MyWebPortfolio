@@ -72,7 +72,7 @@ export class ElMundoDetails extends React.Component { // eslint-disable-line rea
     ]
 
     return (
-      <ProjectDetailsLayout title="EL MUNDO RESTAURANT" prevProject="RefugioDetails" nextProject="LaPedreraDetails">
+      <ProjectDetailsLayout title="EL MUNDO RESTAURANT" prevProject="RefugioDetails" nextProject="WebsitesDetails">
          <ProjectsDescription
           img={ElMundo}
           paragraph="El Mundo is a traditional restaurant in the city of Villa Carlos Paz (Argentina) with many years of experience and great quality. The need was to make an important campaign to promote it during low tourist seasons."

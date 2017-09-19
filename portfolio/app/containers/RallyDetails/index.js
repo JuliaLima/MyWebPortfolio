@@ -65,7 +65,7 @@ export class RallyDetails extends React.Component { // eslint-disable-line react
     ]
 
     return (
-      <ProjectDetailsLayout title="RALLY FIXTURE" prevProject="PamelaCayonDetails" nextProject="AdrianDetails">
+      <ProjectDetailsLayout title="RALLY FIXTURE" prevProject="PamelaCayonDetails" nextProject="ReySolDetails">
         <ProjectsDescription
           img={Rally}
           paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."

@@ -98,26 +98,10 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: 'AdrianDetails',
-      name: 'adrianDetails',
-      getComponent(location, cb) {
-        import('containers/AdrianDetails')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
       path: 'ReySolDetails',
       name: 'reySolDetails',
       getComponent(location, cb) {
         import('containers/ReySolDetails')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
-      path: 'CenterDetails',
-      name: 'centerDetails',
-      getComponent(location, cb) {
-        import('containers/CenterDetails')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
@@ -130,10 +114,10 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: 'LaPedreraDetails',
-      name: 'LaPedreraDetails',
+      path: 'WebsitesDetails',
+      name: 'WebsitesDetails',
       getComponent(location, cb) {
-        import('containers/LaPedreraDetails')
+        import('containers/WebsitesDetails')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
@@ -142,6 +126,14 @@ export default function createRoutes(store) {
       name: 'socialClubDetails',
       getComponent(location, cb) {
         import('containers/SocialClubDetails')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: 'GrupoProyectar',
+      name: 'ravenDetails',
+      getComponent(location, cb) {
+        import('containers/RavenDetails')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
