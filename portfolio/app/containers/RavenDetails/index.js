@@ -32,7 +32,8 @@ export class RavenDetails extends React.Component { // eslint-disable-line react
       "Rquirements",
       "Sketching",
       "Design",
-      "Delivery"
+      "Feedback",
+      "Deliver"
     ]
 
     const ImagesArray = [
@@ -43,9 +44,9 @@ export class RavenDetails extends React.Component { // eslint-disable-line react
       <ProjectDetailsLayout title="GRUPO PROYECTAR" prevProject="ElMundoDetails" nextProject="PamelaCayonDetails">
         <ProjectsDescription
           img={RavenImg}
-          paragraph="In the last years it has become necessary for businesses to be present on the internet due to the wide range of people that can be reached. Adrian de las Sierras EVT, Hotel Center and BusinessInside were companies that decided to be in the www's world."
+          paragraph="WORK IN PROGRESS. A mobile application to control the medical professionals who care for their patients at home. Through the combination of three factors (wifi network, GPS and QR code) it will be possible to know if the professional attended the agreed session. It also will allow the professional to organize their visit schedule as they have a large list of patients. The data obtained in the measurement of the factors can be visualized in a desktop application controlled by administrative personnel of the company 'Grupo Proyectar'."
           stepTitle={Process}
-          ProcessParagraph="It is always essential to understand the company when it comes to positioning itself on the web. The first step, and the most important, is to know the requirements to be able to give an effective solution. Then sketches will be created to give nocion of the final result based on the requirements. They will be shown for feedback before beginning the design itself. The design is nothing more than the implementation and development of the proposal raised in the previous stage. When the whole process is finished, the company is once again consulted. In case everything is okay, the website will be published, otherwise, work will continue until it meets the requirements and then will be published."
+          ProcessParagraph="Once the company 'Grupo Proyectar' raised their problem, it began a deep search for a solution. The proposal was accepted with great enthusiasm. After a hard month of thinking the software design and UI's, the implementation was started. The first version is based on the load of basic data, while the Rav3n team (two developers and a designer) continue to advance with the rest of the project."
           images={ImagesArray}
           software={softwareList}
           labels={LabelList}
