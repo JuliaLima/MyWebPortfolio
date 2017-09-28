@@ -45,18 +45,15 @@ export class RallyDetails extends React.Component { // eslint-disable-line react
     ]
 
     const LabelList = [
-      "UI Design",
-      "UI Style Guide",
-      "Design Principles",
-      "Web App"
+      "Graphic Design",
+      "Brochure"
     ]
 
     const Process = [
-      "Research",
-      "Understanding",
+      "Idea",
+      "Financers",
       "Design",
-      "Prototypes",
-      "Tests"
+      "Distribution"
     ]
 
     const ImagesArray = [
@@ -68,9 +65,9 @@ export class RallyDetails extends React.Component { // eslint-disable-line react
       <ProjectDetailsLayout title="RALLY FIXTURE" prevProject="PamelaCayonDetails" nextProject="ReySolDetails">
         <ProjectsDescription
           img={Rally}
-          paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."
+          paragraph="Every year the World Rally Car event is held in Argentina. It is an event that brings together many people, both locally and internationally, and which involves a great tourist movement in the areas where it takes place. A leaflet was designed to be distributed free to the people present on the day of the shakedown and was financed by different businesses and companies of the city of Villa Carlos Paz."
           stepTitle={Process}
-          ProcessParagraph="Being a project realized from a design perspective, it was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
+          ProcessParagraph="This project was realized thanks to the businesses and companies that participated in exchange for publicity. Around 10,000 copies were printed and delivered by promoters on the day of shakedown."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={RallyColors}

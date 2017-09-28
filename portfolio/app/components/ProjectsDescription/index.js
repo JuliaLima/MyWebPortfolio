@@ -55,12 +55,7 @@ const Gallery = styled.div`
   flex: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
-
-  img{
-    width:33%;
-    margin-bottom: 0.5rem;
-  }
+  justify-content: center;
 `;
 
   const LinkButton = styled.span`

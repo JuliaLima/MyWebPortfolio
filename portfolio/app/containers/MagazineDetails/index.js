@@ -8,9 +8,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Magazine from './MagazineDetails.png';
 import MagazineColors from './MagazineColors.png';
-import gall1 from './gall1.svg';
-import gall2 from './gall2.svg';
-import gall3 from './gall3.svg';
+import gall1 from './gall1.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -51,17 +49,13 @@ export class MagazineDetails extends React.Component { // eslint-disable-line re
     ]
 
     const Process = [
-      "Research",
-      "Understanding",
+      "Proposal",
       "Design",
-      "Prototypes",
-      "Tests"
+      "Deliver"
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3
+      gall1
     ]
 
     return (
@@ -70,7 +64,7 @@ export class MagazineDetails extends React.Component { // eslint-disable-line re
           img={Magazine}
           paragraph="The objective of this work was to make visually attractive a university investigation made by students of the computer engineering career of Facultad de Ciencias Exactas, Físicas y Naturales - UNC (Argentina)."
           stepTitle={Process}
-          ProcessParagraph="DESIGN: Establishment of a grid and definition of spaces for texts and images. The graphic elements and chromatic palette used refer to the IT world, lines and squares and range of blues."
+          ProcessParagraph="Establishment of a grid and definition of spaces for texts and images. The graphic elements and chromatic palette used refer to the IT world, lines and squares and range of blues."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={MagazineColors}

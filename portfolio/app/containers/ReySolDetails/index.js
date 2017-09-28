@@ -49,15 +49,15 @@ export class ReySolDetails extends React.Component { // eslint-disable-line reac
 
     const LabelList = [
       "Graphic Design",
-      "Cabins"
+      "Bach",
+      "Graphic Pieces"
     ]
 
     const Process = [
-      "Research",
-      "Understanding",
+      "Requirements",
       "Design",
-      "Prototypes",
-      "Tests"
+      "Logo",
+      "Application"
     ]
 
     const ImagesArray = [
@@ -71,10 +71,9 @@ export class ReySolDetails extends React.Component { // eslint-disable-line reac
       <ProjectDetailsLayout title="REYSOL CABAÑAS" prevProject="RallyDetails" nextProject="MagazineDetails">
         <ProjectsDescription
           img={ReySol}
-          paragraph="Design of an identifying sign and application of it in a series of graphic pieces for cabins in temporary rent located in Villa Carlos Paz city (Argentina)."
+          paragraph="Design of an identifying sign and application of it in a series of graphic pieces for temporary rent baches located in Villa Carlos Paz city (Argentina)."
           stepTitle={Process}
-          ProcessParagraph="BRANDING: The literal translation of the name is 'KingSun', so the logo will be composed and have a direct reference to the name of the business.
-            CASUAL DESIGNS: The owners asked in different and specific opportunities for help with some graphic pieces. Digital banners were designed for Christmas time, guides to inform and locate the tourists that were lodged in the cabins and even a magnet as a souvenir with contact details of the place."
+          ProcessParagraph="The literal translation of the name is 'KingSun', so the logo will be composed and have a direct reference to the name of the business. The owners asked in different and specific opportunities for help with some graphic pieces. Digital banners were designed for Christmas time, guides to inform and locate the tourists that were lodged in the cabins and even a magnet as a souvenir with contact details of the place."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={ReySolColors}

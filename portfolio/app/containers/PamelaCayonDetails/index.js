@@ -57,11 +57,9 @@ export class PamelaCayonDetails extends React.Component { // eslint-disable-line
     ]
 
     const Process = [
-      "Research",
-      "Understanding",
-      "Design",
-      "Prototypes",
-      "Tests"
+      "Requirements",
+      "Sketching",
+      "Final Design"
     ]
 
     const ImagesArray = [
@@ -77,9 +75,9 @@ export class PamelaCayonDetails extends React.Component { // eslint-disable-line
       <ProjectDetailsLayout title="PAMELA CAYON" prevProject="WebsitesDetails" nextProject="RallyDetails">
          <ProjectsDescription
           img={PamelaCayon}
-          paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."
+          paragraph="Pamela Cayon is a fashion designer who decided to launch her own brand of clothing. For this, she needed a logo to differentiate from the wide competition."
           stepTitle={Process}
-          ProcessParagraph="Being a project realized from a design perspective, it was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
+          ProcessParagraph="After a meeting in which Pamela raised the need for an identifying sign, a series of sketches were made based on these requirements and ideas that she expressed. Once she selected the option, the final design was delivered."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={PamelaCayonColors}

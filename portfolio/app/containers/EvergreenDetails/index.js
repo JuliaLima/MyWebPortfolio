@@ -13,7 +13,7 @@ import gall3 from './gall3.svg';
 import gall4 from './gall4.svg';
 import gall5 from './gall5.svg';
 import gall6 from './gall6.svg';
-import EvergreenColors from './EvergreenColors.png';
+import EvergreenColors from './Colors.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
