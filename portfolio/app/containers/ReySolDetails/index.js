@@ -9,9 +9,6 @@ import { connect } from 'react-redux';
 import ReySol from './ReySolDetails.png';
 import ReySolColors from './ReySolColors.png';
 import gall1 from './gall1.png';
-import gall2 from './gall2.png';
-import gall3 from './gall3.png';
-import gall4 from './gall4.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -61,10 +58,7 @@ export class ReySolDetails extends React.Component { // eslint-disable-line reac
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3,
-      gall4
+      gall1
     ]
 
     return (

@@ -8,14 +8,6 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Diga from './Diga.png';
 import gall1 from './gall1.png';
-import gall2 from './gall2.png';
-import gall3 from './gall3.png';
-import gall4 from './gall4.png';
-import gall5 from './gall5.png';
-import gall6 from './gall6.png';
-import gall7 from './gall7.png';
-import gall8 from './gall8.png';
-import gall9 from './gall9.png';
 import TuristicosColors from './Colors.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
@@ -44,15 +36,7 @@ export class DigaDetails extends React.Component { // eslint-disable-line react/
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3,
-      gall4,
-      gall5,
-      gall6,
-      gall7,
-      gall8,
-      gall9
+      gall1
     ]
 
     return (
@@ -61,7 +45,7 @@ export class DigaDetails extends React.Component { // eslint-disable-line react/
           img={Diga}
           paragraph="A user-centered teaching kit to be used in the treatment of children diagnosed with Autism Spectrum Disorder (ASD) featuring a stylistic normalization of a pre-existing system. It consists of didactic pieces and a supplementary support framing. Its purpose is to improve the communication stimulation process in children with autism."
           stepTitle={Process}
-          ProcessParagraph="Being a project realized from a design perspective, it was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
+          ProcessParagraph="It was necessary to understand ASD, including interviews with health professionals, reading psychology books and papers and web search. Didactic pieces were designed by applying iterative design and interdisciplinary meetings to achieve an effective product from all points of view. It also implied brand design, marketing proposal and pre- and post-printing thinking. Real tests were carried out in sessions under a speech therapist supervision through a detailed form designed to guide the professional when evaluating the kit in front of the child."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={TuristicosColors}

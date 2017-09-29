@@ -7,13 +7,8 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Evergreen from './EvergreenDetail.png';
-import gall1 from './gall1.svg';
-import gall2 from './gall2.svg';
-import gall3 from './gall3.svg';
-import gall4 from './gall4.svg';
-import gall5 from './gall5.svg';
-import gall6 from './gall6.svg';
-import EvergreenColors from './Colors.png';
+import gall1 from './gall1.png';
+import EvergreenColors from './evergreenColors.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -39,19 +34,14 @@ export class EvergreenDetails extends React.Component { // eslint-disable-line r
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3,
-      gall4,
-      gall5,
-      gall6
+      gall1
     ]
 
     return (
       <ProjectDetailsLayout title="EVERGREEN" prevProject="DigaDetails" nextProject="RefugioDetails">
         <ProjectsDescription
           img={Evergreen}
-          paragraph="Freelance project for a US company called Evergreen under a program organized by GNOME, called Outreach Program for Woman (now renamed Outreachy). Evergreen needed to migrate a desktop to a web application."
+          paragraph="Freelance remote project for Evergreen (US located company) under a program organized by GNOME, called Outreach Program for Woman (now renamed Outreachy). Evergreen needed to migrate a desktop to a web application and chose me to design a new UI style guide and sketch the user interactions."
           stepTitle={Process}
           ProcessParagraph="Collaborate with product management and engineering to define and implement innovative solutions for the product direction, visuals and experience. Establish and promote design guidelines, best practices and standards. Delivered a complete and detailed style guide with UI sketching using Adobe Illustrator."
           images={ImagesArray}

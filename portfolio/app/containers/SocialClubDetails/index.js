@@ -8,7 +8,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import SocialClub from './SocialClubDetails.png';
 import SocialClubColors from './SocialClubColors.png';
-import gall1 from './SocialClubDetails.png';
+import gall1 from './gall1.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -23,16 +23,14 @@ export class SocialClubDetails extends React.Component { // eslint-disable-line 
 
     const LabelList = [
       "Graphic Design",
-      "Visual Designer",
-      "Digital Banners"
+      "Cuban Bar"
     ]
     
     const Process = [
       "Research",
-      "Understanding",
+      "Inspiration",
       "Design",
-      "Prototypes",
-      "Tests"
+      "Deliver"
     ]
 
     const ImagesArray = [

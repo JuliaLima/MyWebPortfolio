@@ -9,11 +9,6 @@ import { connect } from 'react-redux';
 import Websites from './WebsitesDetails.png';
 import WebsitesColors from './Colors.png';
 import gall1 from './gall1.png';
-import gall2 from './gall2.png';
-import gall3 from './gall3.png';
-import gall4 from './gall4.png';
-import gall5 from './gall5.png';
-import gall6 from './gall6.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -41,21 +36,16 @@ export class WebsitesDetails extends React.Component { // eslint-disable-line re
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3,
-      gall4,
-      gall5,
-      gall6
+      gall1
     ]
 
     return (
       <ProjectDetailsLayout title="WEBSITE DESIGN" prevProject="ElMundoDetails" nextProject="PamelaCayonDetails">
         <ProjectsDescription
           img={Websites}
-          paragraph="In the last years it has become necessary for businesses to be present on the internet due to the wide range of people that can be reached. Adrian de las Sierras EVT, Hotel Center and BusinessInside were companies that decided to be in the www's world."
+          paragraph="Here I present a recopilation of websites I took as freelance projects. Adrian de las Sierras EVT, Hotel Center and BusinessInside were companies that trusted me the task."
           stepTitle={Process}
-          ProcessParagraph="It is always essential to understand the company when it comes to positioning itself on the web. The first step, and the most important, is to know the requirements to be able to give an effective solution. Then sketches will be created to give nocion of the final result based on the requirements. They will be shown for feedback before beginning the design itself. The design is nothing more than the implementation and development of the proposal raised in the previous stage. When the whole process is finished, the company is once again consulted. In case everything is okay, the website will be published, otherwise, work will continue until it meets the requirements and then will be published."
+          ProcessParagraph="It is always essential to understand the company when it comes to positioning itself on the web. In all cases the first, and most important, step was to clearly understand the companies' brands and requirements to be able to give an effective solution. Then sketches were created to give notion of the final result based on the requirements. They were shown for feedback and then the hi-fi designs and/or the website implementation followed. A continuous feedback loop with the client was established during the whole implementation of the projects."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={WebsitesColors}

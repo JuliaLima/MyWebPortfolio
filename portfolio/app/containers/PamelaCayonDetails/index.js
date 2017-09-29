@@ -9,11 +9,6 @@ import { connect } from 'react-redux';
 import PamelaCayon from './PamelaCayonDetails.png';
 import PamelaCayonColors from './PamelaCayonColors.png';
 import gall1 from './gall1.png';
-import gall2 from './gall2.png';
-import gall3 from './gall3.png';
-import gall4 from './gall4.png';
-import gall5 from './gall5.png';
-import gall6 from './gall6.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -50,10 +45,9 @@ export class PamelaCayonDetails extends React.Component { // eslint-disable-line
     ]
 
     const LabelList = [
-      "UI Design",
-      "UI Style Guide",
-      "Design Principles",
-      "Web App"
+      "Brand Design",
+      "Logo",
+      "Fashion"
     ]
 
     const Process = [
@@ -63,19 +57,14 @@ export class PamelaCayonDetails extends React.Component { // eslint-disable-line
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3,
-      gall4,
-      gall5,
-      gall6
+      gall1
     ]
 
     return (
       <ProjectDetailsLayout title="PAMELA CAYON" prevProject="WebsitesDetails" nextProject="RallyDetails">
          <ProjectsDescription
           img={PamelaCayon}
-          paragraph="Pamela Cayon is a fashion designer who decided to launch her own brand of clothing. For this, she needed a logo to differentiate from the wide competition."
+          paragraph="Pamela Cayon is a fashion designer who decided to launch her own brand of clothing. For this, she needed a logo to differentiate from wide competition."
           stepTitle={Process}
           ProcessParagraph="After a meeting in which Pamela raised the need for an identifying sign, a series of sketches were made based on these requirements and ideas that she expressed. Once she selected the option, the final design was delivered."
           images={ImagesArray}

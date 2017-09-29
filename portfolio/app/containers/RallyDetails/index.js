@@ -9,7 +9,6 @@ import { connect } from 'react-redux';
 import Rally from './RallyDetails.png';
 import RallyColors from './Colors.png';
 import gall1 from './gall1.png';
-import gall2 from './gall2.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -57,15 +56,14 @@ export class RallyDetails extends React.Component { // eslint-disable-line react
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2
+      gall1
     ]
 
     return (
       <ProjectDetailsLayout title="RALLY FIXTURE" prevProject="PamelaCayonDetails" nextProject="ReySolDetails">
         <ProjectsDescription
           img={Rally}
-          paragraph="Every year the World Rally Car event is held in Argentina. It is an event that brings together many people, both locally and internationally, and which involves a great tourist movement in the areas where it takes place. A leaflet was designed to be distributed free to the people present on the day of the shakedown and was financed by different businesses and companies of the city of Villa Carlos Paz."
+          paragraph="Every year the World Rally Car event is held in Argentina. It is an event that brings together many people, both locally and internationally, and which involves a great tourist movement in the areas where it takes place. I designed a leaflet to be distributed for free to the people present on the day of the shakedown. The project was financed by different local businesses and companies of the city of Villa Carlos Paz."
           stepTitle={Process}
           ProcessParagraph="This project was realized thanks to the businesses and companies that participated in exchange for publicity. Around 10,000 copies were printed and delivered by promoters on the day of shakedown."
           images={ImagesArray}

@@ -9,11 +9,6 @@ import { connect } from 'react-redux';
 import ElMundo from './ElMundoDetails.png';
 import ElMundoColors from './ElMundoColors.png';
 import gall1 from './gall1.png';
-import gall2 from './gall2.png';
-import gall3 from './gall3.png';
-import gall4 from './gall4.png';
-import gall5 from './gall5.png';
-import gall6 from './gall6.png';
 import ProjectsDescription from 'components/ProjectsDescription';
 import styled from 'styled-components';
 import ProjectDetailsLayout from 'components/ProjectDetailsLayout';
@@ -63,21 +58,16 @@ export class ElMundoDetails extends React.Component { // eslint-disable-line rea
     ]
 
     const ImagesArray = [
-      gall1,
-      gall2,
-      gall3,
-      gall4,
-      gall5,
-      gall6
+      gall1
     ]
 
     return (
       <ProjectDetailsLayout title="EL MUNDO RESTAURANT" prevProject="RefugioDetails" nextProject="WebsitesDetails">
          <ProjectsDescription
           img={ElMundo}
-          paragraph="El Mundo is a traditional restaurant in the city of Villa Carlos Paz (Argentina) with many years of experience and great quality. The need was to make an important campaign to promote it during low tourist seasons."
+          paragraph="El Mundo is a traditional restaurant in the city of Villa Carlos Paz (Argentina) with many years of experience and great quality. I was hired to establish and carry out a marketing strategy mainly focused on social media to promote the restaurant to the local public during low tourist seasons."
           stepTitle={Process}
-          ProcessParagraph="Once raised the need to promote the restaurant highlighting its trajectory, quality and promotions, a detailed strategy was designed including publications in social networks (Facebook, Instagram and Twitter), flyers and radio advertising. The central idea of the campaign was to generate a link with customers maintaining an attitude of warmth and confidence while strengthening the already created with frequent diners."
+          ProcessParagraph="The idea was to promote the restaurant highlighting its trajectory, quality and promotions. A detailed strategy was designed mainly focused on social networks (Facebook, Instagram and Twitter) but also including flyers and radio advertising. The central idea of the campaign was to generate a link with local customers maintaining an attitude of warmth and confidence."
           images={ImagesArray}
           software={softwareList}
           colorpaletteimg={ElMundoColors}
