@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Julia Lima</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    </head>
+
+    <body>
+        <div id="about-page-container">
+            <div id="about-page-main-section">
+                <div id="menu">
+                    <div id="menu-header">
+                        <a href="index.html"><b>Julia Lima</b></a>
+                        <div class="menu-horizontal-separator"><hr /></div>
+                    </div>
+                    <div><img src="imgs/jlblack.svg"></div>
+                    <div id="menu-items">
+                        <div class="menu-horizontal-separator"><hr/></div>
+                        <span><a href="index.html">Projects</a></span>
+                        <span><a href="about.html"><b>About</b></a></span>
+                    </div>
+                </div>
+
+                <div id="about">
+                    <div class="page-title"><b>About</b></div>
+                    <div class="hero-img"><img src="imgs/me.png"></div>
+                    <div class="text-container">Since I can remember I always loved being creative. As a kid I used to spent hours drawing, painting, doing crafts and more. I used to invest long hours and put a lot of effort in hand-crafting gifts for my loved ones.
+                    <br />A great influence for me was my family. I was born and raised in an environment surrounded by all kind of art.
+                    <br />At the beginning of 2009 I started a career I never pictured myself in. From day zero I loved it. It was not olny art, it was applied art. At that point it helped me to understand who I was and, therefore, who I wanted to be: a graphic designer.
+                    <br />In 2016 I obtained a bachelor degree in Graphic Design from Universidad Provincial de Córdoba (Argentina). From 2012, I have successfully designed solutions for print media and the IT industry, including websites, web apps UX/UI , logos, business cards, flyers, banners and brochures. My work experience includes working in an agency and several freelance projects.
+                    <br />I am passionate, dedicated, hardworking and very responsible. I put a lot of attention to details. My philosophy is to learn something new every day and that can only happen if I'm open to experience new things.</div>
+                    <div id="cv-button"><a href="http://julialima.com.ar/files/juliaLimaCV.pdf" class="black-button" target="_blank">Check my Resume</a></div>
+                </div>
+            </div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+
+            <div id="footer">
+                    <p>Feel free to get in touch with me if you have any questions or projects coming up. I'd love to hear from you!<br />julia.lima.dg@gmail.com</p>
+                    <p class="footer-last-line"><b>Julia Lima | UX Designer | © 2019</b></p>  
+                </div>
+        </div> 
+
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+    </body>
+</html>

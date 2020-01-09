@@ -1,0 +1,330 @@
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+hr{
+    border: 1px solid;
+}
+
+#projects-page-container{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects-page-container a{
+    color:white;
+}
+
+#projects-page-main-section{
+    width: 1000px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu-header{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-horizontal-separator{
+    flex: 1;
+    margin: 0px 20px;
+}
+
+#menu-items{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu-items span:last-child{
+    margin-left: 40px;
+}
+
+#main-presentation-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+#current-work{
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+#current-work a{
+    text-decoration: underline;
+}
+
+#email-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#main-presentation-text span:a{
+    text-decoration: underline !important;
+}
+
+#project{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.project-1-background{
+    background-color: #0036D0;
+}
+
+.project-2-background{
+    background-color: #ff5600;
+}
+
+.project-3-background{
+    background-color: #0D2F5E;
+}
+
+.projects-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.projects-content div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.project-company{
+    font-size: 14px;
+}
+
+.project-description{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.project-link a{
+    text-decoration: underline;
+}
+
+#footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-last-line{
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+.white-button{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    color: black !important;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.white-button:hover {
+    border: 1px solid white;
+    background-color: black;
+    color: white !important;
+}
+
+
+/* ABOUT PAGE */
+
+#about-page-container{
+    background-color: white;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-page-container a{
+    color:black;
+}
+
+#about-page-main-section{
+    width: 1000px;
+}
+
+#about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title{
+    font-size: 30px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.hero-img{
+    margin-bottom: 50px;
+}
+
+.text-container{
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+#cv-button a{
+    text-decoration: none;
+}
+
+.black-button{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.black-button:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black !important;
+}
+
+
+/* CHECKLISTS PAGE */
+
+#checklists{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-text{
+    font-size: 30px;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cs-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 50px;
+    padding: 20px 0px;
+}
+
+#paragraph{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+#paragraph h5{
+    margin-bottom: 10px;
+    color: gray;
+
+}
+
+#paragraph h1{
+    margin-top: 0px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white !important;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  #myBtn:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black !important;
+  }
+
+  #projects-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    padding-top: 50px;
+  }
+
+  #projects-nav div:first-child{
+    color: gray;
+    cursor: not-allowed;
+  }
+
+  #projects-nav div:last-child{
+    color: gray;
+    cursor: not-allowed;
+  }
+
+  #projects-nav div:first-child:before{
+    content: "←";
+  }
+
+  #projects-nav div:last-child:after{
+    content: "→";
+  }
+  
