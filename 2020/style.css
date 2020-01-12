@@ -1,6 +1,6 @@
 body{
     font-family: 'Assistant', sans-serif;
-    font-size: 16px;
+    font-size: 1.5vw;
     padding: 0px;
     margin: 0px;
 }
@@ -9,12 +9,18 @@ hr{
     border: 1px solid;
 }
 
+#julia-lima-logo-container{
+    width: 4%;
+}
+
+#julia-lima-logo {
+    width: 100%;
+}
+
 #projects-page-container{
     background-color: black;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100vw;
+    padding: 8vh 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +31,9 @@ hr{
 }
 
 #projects-page-main-section{
-    width: 1000px;
+    width: 60vw;
+    min-width: 1000px;
+    max-width: 2500px;
 }
 
 #menu{
@@ -48,7 +56,7 @@ hr{
 
 .menu-horizontal-separator{
     flex: 1;
-    margin: 0px 20px;
+    margin: 0px 2vw;
 }
 
 #menu-items{
@@ -60,25 +68,26 @@ hr{
 }
 
 #menu-items span:last-child{
-    margin-left: 40px;
+    margin-left: 4vw;
 }
 
 #main-presentation-text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 20vh 0;
 }
 
 #presentation{
-    font-size: 30px;
+    font-size: 3vw;
     text-align: center;
-    margin-top: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
 }
 
 #current-work{
-    font-size: 24px;
-    margin-bottom: 100px;
+    font-size: 2.3vw;
+    margin-bottom: 7vh;
 }
 
 #current-work a{
@@ -88,7 +97,6 @@ hr{
 #email-button{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
 #main-presentation-text span:a{
@@ -96,8 +104,8 @@ hr{
 }
 
 #project{
-    padding: 50px;
-    margin-bottom: 50px;
+    padding: 3.8vw;
+    margin-bottom: 7.5vh;
 }
 
 .project-1-background{
@@ -122,43 +130,52 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-right: 1vw;
 }
 
 .project-title{
-    font-size: 30px;
+    font-size: 3vw;
     margin-bottom: -10px;
 }
 
 .project-company{
-    font-size: 14px;
+    font-size: 1.3vw;
 }
 
 .project-description{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 1.5vh;
+    margin-bottom: 3vh;
 }
 
 .project-link a{
     text-decoration: underline;
 }
 
+.project-image-container {
+    width: 50%;
+}
+
+.project-image-container img{
+    width: 100%;
+}
+
 #footer{
     width: 100%;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 15vh;
 }
 
 .footer-last-line{
-    font-size: 12px;
-    margin-top: 50px;
+    font-size: 1.15vw;
+    margin-top: 7.5vh;
 }
 
 .white-button{
     text-align: center;
-    padding: 0.5rem 1rem;
-    border: 1px solid white;
+    padding: 1.2vh 1.3vw;
+    border: 0.1vw solid white;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0.4vw;
     color: black !important;
     font-weight: bold;
     cursor: pointer;
@@ -166,7 +183,6 @@ hr{
 }
 
 .white-button:hover {
-    border: 1px solid white;
     background-color: black;
     color: white !important;
 }
@@ -177,9 +193,7 @@ hr{
 #about-page-container{
     background-color: white;
     color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100vw;
+    padding: 8vh 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,11 +204,12 @@ hr{
 }
 
 #about-page-main-section{
-    width: 1000px;
+    width: 60vw;
+    min-width: 1000px;
+    max-width: 2500px;
 }
 
 #about{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,18 +217,22 @@ hr{
 }
 
 .page-title{
-    font-size: 30px;
-    margin-top:50px;
-    margin-bottom:50px;
+    font-size: 3vw;
+    margin: 8vh 0px;
 }
 
 .hero-img{
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
+    width: 100%;
+}
+
+.hero-img img{
+    width: 100%;
 }
 
 .text-container{
-    width: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
+    width: 60%;
 }
 
 #cv-button a{
@@ -222,17 +241,16 @@ hr{
 
 .black-button{
     text-align: center;
-    padding: 0.5rem 1rem;
-    border: 1px solid black;
+    padding: 1.2vh 1.3vw;
+    border: 0.1vw solid black;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 0.4vw;
     color: white !important;
     font-weight: bold;
     cursor: pointer;
 }
 
 .black-button:hover {
-    border: 1px solid black;
     background-color: white;
     color: black !important;
 }
@@ -240,40 +258,46 @@ hr{
 
 /* CHECKLISTS PAGE */
 
-#checklists{
-    width: 100%;
+#cs-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#cs-container .text-container{
+    width: 100%;
+}
+
+#cs-container .text-container:last-child{
+    margin-bottom: 3vh;
+}
+
 .highlight-text{
-    font-size: 30px;
-    width: 600px;
+    font-size: 3vw;
+    width: 60%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 7.5vh;
 }
 
 #cs-data{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 600px;
-    margin-bottom: 50px;
-    padding: 20px 0px;
+    width: 60%;
+    margin-bottom: 7.5vh;
+    padding: 3vh 0px;
 }
 
 #paragraph{
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 60%;
 }
 
 #paragraph h5{
-    margin-bottom: 10px;
+    margin-bottom: 1.5vh;
     color: gray;
-
 }
 
 #paragraph h1{
@@ -286,45 +310,168 @@ hr{
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    font-size: 0.8rem;
-    border: none;
+    font-size: 1.15vw;
+    border: 0.1vw solid black;
     outline: none;
     background-color: black;
     color: white !important;
     cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
+    padding: 0.7vw;
+    border-radius: 0.4vw;
+}
   
-  #myBtn:hover {
-    border: 1px solid black;
+#myBtn:hover {
     background-color: white;
     color: black !important;
-  }
+}
 
-  #projects-nav{
+#projects-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 600px;
-    padding-top: 50px;
-  }
+    width: 60%;
+    padding-top: 7.5vh;
+}
 
-  #projects-nav div:first-child{
+#projects-nav div:first-child{
     color: gray;
     cursor: not-allowed;
-  }
+}
 
-  #projects-nav div:last-child{
+#projects-nav div:last-child{
     color: gray;
     cursor: not-allowed;
-  }
+}
 
-  #projects-nav div:first-child:before{
+#projects-nav div:first-child:before{
     content: "←";
-  }
+}
 
-  #projects-nav div:last-child:after{
+#projects-nav div:last-child:after{
     content: "→";
-  }
-  
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 1.25vw;
+    }
+
+    #presentation {
+        font-size: 2.5vw;
+        margin-bottom: 3.33vh;
+    }
+
+    #current-work{
+        font-size: 1.91vw;
+    }
+
+    #menu-items span:last-child{
+        margin-left: 3.33vw;
+    }
+
+    #project{
+        padding: 3.17vw;
+        margin-bottom: 6.26vh;
+    }
+
+    #footer{
+        margin-top: 12.5vh;
+    }
+
+    .project-description{
+        margin-top: 1.25vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .project-title{
+        font-size: 2.5vw;
+    }
+
+    .project-company{
+        font-size: 1.08vw;
+    }
+
+    .footer-last-line{
+        font-size: 0.96vw;
+        margin-top: 6.25vh;
+    }
+
+    .page-title{
+        font-size: 2.5vw;
+    }
+
+    .highlight-text{
+        font-size: 2.5vw;
+    }
+
+    .menu-horizontal-separator{
+        margin: 0px 1.67vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body{
+        font-size: 1vw;
+    }
+
+    #cs-container{
+        font-size: 1.25vw;
+    }
+
+    #presentation {
+        font-size: 2vw;
+        margin-bottom: 2.66vh;
+    }
+
+    #current-work{
+        font-size: 1.53vw;
+    }
+
+    #menu-items span:last-child{
+        margin-left: 2.66vw;
+    }
+
+    #project{
+        padding: 2.11vw;
+        margin-bottom: 4.16vh;
+    }
+
+    #footer{
+        margin-top: 10vh;
+    }
+
+    #main-presentation-text{
+        padding: 15vh 0;
+    }
+    
+
+    .project-description{
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    .project-title{
+        font-size: 2vw;
+    }
+
+    .project-company{
+        font-size: 0.87vw;
+    }
+
+    .footer-last-line{
+        font-size: 0.77vw;
+        margin-top: 5vh;
+    }
+
+    .page-title{
+        font-size: 2vw;
+    }
+
+    .highlight-text{
+        font-size: 2vw;
+    }
+
+    .menu-horizontal-separator{
+        margin: 0px 1.33vw;
+    }
+}
