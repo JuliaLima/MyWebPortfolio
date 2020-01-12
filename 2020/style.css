@@ -216,7 +216,7 @@ hr{
 
 .page-title{
     font-size: 3vw;
-    margin: 8vh 0px;
+    margin: 5vh;
 }
 
 .hero-img{
@@ -253,7 +253,6 @@ hr{
     color: black !important;
 }
 
-
 /* CHECKLISTS PAGE */
 
 #cs-container{
@@ -275,7 +274,16 @@ hr{
     font-size: 3vw;
     width: 60%;
     text-align: center;
-    margin-bottom: 7.5vh;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+.highlight-text-top{
+    font-size: 3vw;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 5px;
 }
 
 #cs-data{
@@ -388,8 +396,9 @@ hr{
         font-size: 4vw;
     }
     
-    .highlight-text{
+    .highlight-text, .highlight-text-top{
         font-size: 4vw;
+        width: 100%;
     }
     
     #myBtn{
@@ -418,10 +427,6 @@ hr{
     }
 
     .text-container{
-        width: 100%;
-    }
-
-    .highlight-text{
         width: 100%;
     }
 
@@ -485,9 +490,10 @@ hr{
         margin: 6vh 0px 4vh 0px;
     }
     
-    .highlight-text{
+    .highlight-text, .highlight-text-top{
         font-size: 5vw;
         margin-bottom: 5.5vh;
+        margin-top: 0px;
     }
     
     #myBtn{
