@@ -349,3 +349,89 @@ hr{
 #projects-nav div:last-child:after{
     content: "→";
 }
+
+@media screen and (max-width: 800px) {
+    #projects-page-main-section{
+        max-width: 800px;
+    }
+
+    #about-page-main-section{
+        max-width: 800px;
+    }
+
+    body{
+        font-size: 2vw; /* original 1.5vw | proportion 1.33 */
+    }
+
+    #presentation{
+        font-size: 3.5vw;
+    }
+    
+    #current-work{
+        font-size: 2.5vw;
+    }
+    
+    .project-title{
+        font-size: 4vw;
+    }
+    
+    .project-company{
+        font-size: 1.73vw;
+    }
+    
+    .footer-last-line{
+        font-size: 1.53vw;
+    }
+    
+    .page-title{
+        font-size: 4vw;
+    }
+    
+    .highlight-text{
+        font-size: 4vw;
+    }
+    
+    #myBtn {
+        font-size: 1.53vw;
+    }
+
+    #main-presentation-text{
+        padding: 15vh 5vw;
+    }
+
+    .project{
+        margin-bottom: 4vh;
+    }
+
+    .projects-content{
+        align-items: center;
+    }
+
+    .project-image-container{
+        width: 70%;
+    }
+
+    .projects-content div:first-child{
+        margin-right: 3vw;
+    }
+
+    .text-container{
+        width: 100%;
+    }
+
+    .highlight-text{
+        width: 100%;
+    }
+
+    #cs-data{
+        width: 100%;
+    }
+    
+    #paragraph{
+        width: 100%;
+    }
+    
+    #projects-nav{
+        width: 100%;
+    }
+}
