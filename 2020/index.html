@@ -7,6 +7,41 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                if (!!window.location.search) {
+                    //Store hash
+                    var hash = window.location.search.replace("?", "#");
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+                $(".smooth-scroll-link").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                
+                        // Store hash
+                        var hash = this.hash;
+                
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -20,7 +55,7 @@
                     <div id="julia-lima-logo-container"><img id="julia-lima-logo" src="imgs/jl.svg"></div>
                     <div id="menu-items">
                         <div class="menu-horizontal-separator"><hr/></div>
-                        <span><a href="index.html"><b>Projects</b></a></span>
+                        <span><a class="smooth-scroll-link" href="index.html#project-1"><b>Projects</b></a></span>
                         <span><a href="about.html">About</a></span>
                     </div>
                 </div>
@@ -28,10 +63,10 @@
                 <div id="main-presentation-text">
                     <div id="presentation">Hi there! Julia here,<br />a UX designer based in Auckland, New Zealand.</div>
                     <div id="current-work">Currently working at <a href="http:fergus.com" target=”_blank”>Fergus Software Ltd</a></div>
-                    <div id="email-button"><a href="mailto:julia.lima.dg@gmail.com?Subject=Hello%20form%20your%20Website" class="white-button">Get in touch</a></div>
+                    <div id="email-button"><a href="index.html#footer" class="smooth-scroll-link white-button">Get in touch</a></div>
                 </div>
 
-                <div id="project" class="project-1-background">
+                <div id="project-1" class="project project-1-background">
                     <div class="projects-content">
                         <div>
                             <p class="project-title"><b>Case study: Checklists</b><br /></p>
@@ -43,7 +78,7 @@
                     </div>
                 </div>
 
-                <div id="project" class="project-2-background">
+                <div id="project-2" class="project project-2-background">
                         <div class="projects-content">
                             <div>
                                 <p class="project-title"><b>Case study: Forms</b><br /></p>
@@ -55,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div id="project" class="project-3-background">
+                    <div id="project-3" class="project project-3-background">
                             <div class="projects-content">
                                 <div>
                                     <p class="project-title"><b>Case study: Rav3n</b><br /></p>
@@ -68,7 +103,7 @@
                         </div>
 
                 <div id="footer">
-                    <div>Feel free to get in touch with me if you have any questions or projects coming up. I'd love to hear from you!<br />julia.lima.dg@gmail.com</div>
+                    <div>Feel free to get in touch with me if you have any questions or projects coming up. I'd love to hear from you!<br />Email: <b>julia.lima.dg@gmail.com</b></div>
                     <p class="footer-last-line"><b>Julia Lima | UX Designer | © 2019</b></p>
                       
                 </div>

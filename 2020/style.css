@@ -3,10 +3,12 @@ body{
     font-size: 1.5vw;
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 hr{
-    border: 1px solid;
+    border: 0.08vw solid;
+    background: white;
 }
 
 #julia-lima-logo-container{
@@ -31,9 +33,7 @@ hr{
 }
 
 #projects-page-main-section{
-    width: 60vw;
-    min-width: 1000px;
-    max-width: 2500px;
+    width: 80vw;
 }
 
 #menu{
@@ -76,7 +76,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20vh 0;
+    padding: 22vh 0;
 }
 
 #presentation{
@@ -103,7 +103,7 @@ hr{
     text-decoration: underline !important;
 }
 
-#project{
+.project{
     padding: 3.8vw;
     margin-bottom: 7.5vh;
 }
@@ -204,9 +204,7 @@ hr{
 }
 
 #about-page-main-section{
-    width: 60vw;
-    min-width: 1000px;
-    max-width: 2500px;
+    width: 80vw;
 }
 
 #about{
@@ -318,6 +316,7 @@ hr{
     cursor: pointer;
     padding: 0.7vw;
     border-radius: 0.4vw;
+    text-decoration: none;
 }
   
 #myBtn:hover {
@@ -349,129 +348,4 @@ hr{
 
 #projects-nav div:last-child:after{
     content: "→";
-}
-
-@media screen and (min-width: 1200px) {
-    body{
-        font-size: 1.25vw;
-    }
-
-    #presentation {
-        font-size: 2.5vw;
-        margin-bottom: 3.33vh;
-    }
-
-    #current-work{
-        font-size: 1.91vw;
-    }
-
-    #menu-items span:last-child{
-        margin-left: 3.33vw;
-    }
-
-    #project{
-        padding: 3.17vw;
-        margin-bottom: 6.26vh;
-    }
-
-    #footer{
-        margin-top: 12.5vh;
-    }
-
-    .project-description{
-        margin-top: 1.25vh;
-        margin-bottom: 2.5vh;
-    }
-
-    .project-title{
-        font-size: 2.5vw;
-    }
-
-    .project-company{
-        font-size: 1.08vw;
-    }
-
-    .footer-last-line{
-        font-size: 0.96vw;
-        margin-top: 6.25vh;
-    }
-
-    .page-title{
-        font-size: 2.5vw;
-    }
-
-    .highlight-text{
-        font-size: 2.5vw;
-    }
-
-    .menu-horizontal-separator{
-        margin: 0px 1.67vw;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    body{
-        font-size: 1vw;
-    }
-
-    #cs-container{
-        font-size: 1.25vw;
-    }
-
-    #presentation {
-        font-size: 2vw;
-        margin-bottom: 2.66vh;
-    }
-
-    #current-work{
-        font-size: 1.53vw;
-    }
-
-    #menu-items span:last-child{
-        margin-left: 2.66vw;
-    }
-
-    #project{
-        padding: 2.11vw;
-        margin-bottom: 4.16vh;
-    }
-
-    #footer{
-        margin-top: 10vh;
-    }
-
-    #main-presentation-text{
-        padding: 15vh 0;
-    }
-    
-
-    .project-description{
-        margin-top: 1vh;
-        margin-bottom: 2vh;
-    }
-
-    .project-title{
-        font-size: 2vw;
-    }
-
-    .project-company{
-        font-size: 0.87vw;
-    }
-
-    .footer-last-line{
-        font-size: 0.77vw;
-        margin-top: 5vh;
-    }
-
-    .page-title{
-        font-size: 2vw;
-    }
-
-    .highlight-text{
-        font-size: 2vw;
-    }
-
-    .menu-horizontal-separator{
-        margin: 0px 1.33vw;
-    }
 }

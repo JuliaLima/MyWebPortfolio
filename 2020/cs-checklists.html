@@ -7,6 +7,30 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".smooth-scroll-link").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                
+                        // Store hash
+                        var hash = this.hash;
+                
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -20,7 +44,7 @@
                     <div id="julia-lima-logo-container"><img id="julia-lima-logo" src="imgs/jlblack.svg"></div>
                     <div id="menu-items">
                         <div class="menu-horizontal-separator"><hr/></div>
-                        <span><a href="index.html"><b>Projects</b></a></span>
+                        <span><a href="index.html?project-1"><b>Projects</b></a></span>
                         <span><a href="about.html">About</a></span>
                     </div>
                 </div>
@@ -83,39 +107,33 @@
                     </div>
                     <div id="projects-nav">
                         <div>Previous Project</div>
-                        <a href="index.html">Back to Projects</a>
+                        <a href="index.html?project-1">Back to Projects</a>
                         <div>Next Project</div>
                     </div>
                 </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+                <a class="smooth-scroll-link" href="cs-checklists.html#about-page-container" id="myBtn" title="Go to top">⬆</a>
             </div>
-
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction();
+                };
+                
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+            </script>
             <div id="footer">
                 <p>Feel free to get in touch with me if you have any questions or projects coming up. I'd love to hear from you!<br />julia.lima.dg@gmail.com</p>
                 <p class="footer-last-line"><b>Julia Lima | UX Designer | © 2019</b></p>  
             </div>
         </div> 
-
-        <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-            } else {
-            mybutton.style.display = "none";
-            }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        </script>
     </body>
 </html>
