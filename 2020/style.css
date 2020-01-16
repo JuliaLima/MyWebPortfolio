@@ -233,6 +233,10 @@ hr{
     width: 60%;
 }
 
+#cv-button{
+    margin-top: 10vh;
+}
+
 #cv-button a{
     text-decoration: none;
 }
@@ -343,24 +347,12 @@ h6{
     align-items: center;
     width: 60%;
     padding-top: 7.5vh;
+    cursor: pointer;
 }
 
-#projects-nav div:first-child{
-    color: gray;
+#project-nav-not-allowed{
     cursor: not-allowed;
-}
-
-#projects-nav div:last-child{
     color: gray;
-    cursor: not-allowed;
-}
-
-#projects-nav div:first-child:before{
-    content: "←";
-}
-
-#projects-nav div:last-child:after{
-    content: "→";
 }
 
 @media screen and (max-width: 800px) {

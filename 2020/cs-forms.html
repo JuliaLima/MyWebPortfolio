@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Julia Lima</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="imgs/faviconJL.ico" type="image/x-icon">
+        <link rel="icon" href="imgs/faviconJL.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".smooth-scroll-link").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                
+                        // Store hash
+                        var hash = this.hash;
+                
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="about-page-container">
+            <div id="about-page-main-section">
+                <div id="menu">
+                    <div id="menu-header">
+                        <a href="index.html"><b>Julia Lima</b></a>
+                        <div class="menu-horizontal-separator"><hr /></div>
+                    </div>
+                    <div id="julia-lima-logo-container"><img id="julia-lima-logo" src="imgs/jlblack.svg"></div>
+                    <div id="menu-items">
+                        <div class="menu-horizontal-separator"><hr/></div>
+                        <span><a href="index.html?project-1"><b>Projects</b></a></span>
+                        <span><a href="about.html">About</a></span>
+                    </div>
+                </div>
+
+                <div id="cs-container">
+                    <div class="page-title"><b>Forms</b></div>
+                    <div class="highlight-text-top"><i>Trades businesses need to streamline the operational processes around their jobs and day to day operations. In order to achieve this, they need to ensure that their work is up to health and safety and compliance standards.</i></div>
+                    <div class="hero-img"><img src="imgs/cs2-hero.jpg"></div>
+                    <div id="cs-data">
+                        <div>
+                            <b>My position</b><br />
+                            UX Designer
+                        </div>
+                        <div>
+                            <b>Team</b><br />
+                            Product Manager<br />
+                            Product Design Lead<br />
+                            Four Developers<br />
+                            QA Professional
+                        </div>
+                        <div>
+                            <b>My role</b><br />
+                            Ideation<br />
+                            Wireframing<br />
+                            Visual Design<br />
+                            Interaction Design<br />
+                            User Research
+                        </div>
+                        <div>
+                            <b>Year</b><br />
+                            2019/20
+                        </div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>The context</h1>
+                        <div class="text-container">This project is the second part of a bigger one (find out more on <a href="cs-checklists.html">checklists</a>). As a brief introduction, forms and checklists were supposed to be the same project, but after many discussions it was decided that they are different features. Forms are meant to gather information to mainly ensure compliance and standardize processes. As opposed to checklists, which are destined to establish procedures to be replicated across the jobs. Let’s also clarify that Fergus is a job management software for trades businesses.</div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>The problem</h1>
+                        <div class="text-container">Fergus customers requested a way to collect information and keep it in the system in the format of a form. They are asked to fill out guvernamental forms to ensure compliance to the established safety parameters in the work they do. On top of that, they are choosing Fergus to leave the paperwork behind by migrating to a cloud based system. This means that they are looking for ways to replicate those physical documents in the software.</div>
+                        <div class="hero-img"><img src="imgs/cs2-testing.jpg"><br /><h6>Users requesting forms</h6></div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>My role</h1>
+                        <div class="text-container">I was involved in the project since the very beginning. I participated in the Design Sprint week and helped by wireframing and prototyping the vision of the feature. Furthermore, it was the first time I conducted usability testing sessions on my own.<br />
+                                Being a really complex functionality, my main task was to permanently provide feedback, design specs and updated designs based on our daily discussions to the developers in charge. In the end, I helped during the testing period.
+                                </div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>Fighting for my idea</h1>
+                        <div class="text-container">I really like when projects are complicated. I always try to think about all the different scenarios and use cases, so I get deeply immersed in the project. And forms was one of those projects. Everything started around July 2019 while the checklist side of the initial project was being implemented.<br />
+                        </div>
+                        <div class="hero-img"><img src="imgs/cs2-testing.jpg"><br /><h6>Usability testing session conducted by me</h6></div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>Iterations</h1>
+                        <div class="text-container">Lala</div>
+                    </div>
+                    <div id="projects-nav">
+                        <span class="not-on-mobile"><a href="cs-checklists.html">Previous Project</a></span>
+                        <a href="index.html?project-1">Back to Projects</a>
+                        <span class="not-on-mobile"><a href="cs-rav3n.html">Next Project</a></span>
+                    </div>
+                </div>
+                <a class="smooth-scroll-link" href="cs-checklists.html#about-page-container" id="myBtn" title="Go to top">⬆</a>
+                <div id="footer">
+                    <div>Feel free to <b>get in touch</b> with me if you have any questions or projects coming up. I'd love to hear from you!<br />Email: <b>julia.lima.dg@gmail.com</b></div>
+                    <p class="footer-last-line"><b>Julia Lima | UX Designer | © 2020</b></p>
+                </div>
+            </div>
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction();
+                };
+                
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+            </script>
+        </div> 
+    </body>
+</html>
