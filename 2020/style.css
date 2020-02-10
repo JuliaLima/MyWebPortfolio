@@ -11,6 +11,19 @@ hr{
     background: white;
 }
 
+ul{
+    margin: 0px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+h4{
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+}
+
 #julia-lima-logo-container{
     width: 4%;
 }
@@ -101,6 +114,10 @@ hr{
 
 #main-presentation-text span:a{
     text-decoration: underline !important;
+}
+
+.highlight{
+    font-weight: 600;
 }
 
 .project{
