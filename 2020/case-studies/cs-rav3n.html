@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>Julia Lima</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
         <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="imgs/faviconJL.ico" type="image/x-icon">
-        <link rel="icon" href="imgs/faviconJL.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../imgs/faviconJL.ico" type="image/x-icon">
+        <link rel="icon" href="../imgs/faviconJL.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -38,10 +38,10 @@
             <div id="about-page-main-section">
                 <div id="menu">
                     <div id="menu-header">
-                        <a href="case-studies.html"><b>Julia Lima</b></a>
+                        <a href="index.html"><b>Julia Lima</b></a>
                         <div class="menu-horizontal-separator"><hr /></div>
                     </div>
-                    <div id="julia-lima-logo-container"><img id="julia-lima-logo" src="imgs/jlblack.svg"></div>
+                    <div id="julia-lima-logo-container"><img id="julia-lima-logo" src="../imgs/jlblack.svg"></div>
                     <div id="menu-items">
                         <div class="menu-horizontal-separator"><hr/></div>
                         <span><a href="index.html?project-1"><b>Projects</b></a></span>
@@ -52,7 +52,7 @@
                 <div id="cs-container">
                     <div class="page-title"><b>Rav3n</b></div>
                     <div class="highlight-text-top"><i>One of the most critical aspects of home care services providers in monitoring and controlling the activity of health professionals who are responsible for their patients.</i></div>
-                    <div class="hero-img"><img src="imgs/cs3-hero.jpg"></div>
+                    <div class="hero-img"><img src="../imgs/cs3-hero.jpg"></div>
                     <div id="cs-data">
                         <div>
                             <b>My position</b><br />
@@ -100,11 +100,11 @@
                     <div id="paragraph">
                         <h1>Accepting the challenge</h1>
                         <div class="text-container">The first thing we did after accepting the challenge was to collect as much information as we could, mostly coming from Grupo Proyectar admin people and leadership team, our main stakeholders. We used to meet regularly via Skype, interviewing different people, in order to fully understand the problem and all its different angles, as well as having a more comprehensive view of their business, clients, goals, expectations, etc. Throughout this process, we heavily relied on practices like <span class="highlight">how-might-we questions, wireframing and prototyping</span> with our stakeholders.</div>
-                        <div class="hero-img"><img src="imgs/cs3-whiteboard.jpg"><br /><h6>Whiteboard thinking process example</h6></div>
+                        <div class="hero-img"><img src="../imgs/cs3-whiteboard.jpg"><br /><h6>Whiteboard thinking process example</h6></div>
                         <div class="text-container">After almost two months of intense work with the entire team, after lots of discussions, planning, and design sessions, we came up with a solution to the problem at hand.</div>
                         <div class="text-container">The final idea was to <span class="highlight">keep track</span> of the start and the end of all the sessions that are carried out with the patients. In order to accomplish this, their employees (health professionals) should install an <span class="highlight">app</span> in their phones - provided by us - and use it each time they visit their patients, registering the moment and location in which the session commences and finishes. All these records are then sent to a <span class="highlight">centralized service</span> that processes them, crafting different types of <span class="highlight">reports</span>. A specialized team - provided by Grupo Proyectar - can use these reports to monitor and control the activity of the entire home care service.</div>
-                        <div class="hero-img"><img src="imgs/cs3-report1.jpg"><br /><h6>Real time report</h6></div>
-                        <div class="hero-img"><img src="imgs/cs3-report2.jpg"><br /><h6>Activity report</h6></div>
+                        <div class="hero-img"><img src="../imgs/cs3-report1.jpg"><br /><h6>Real time report</h6></div>
+                        <div class="hero-img"><img src="../imgs/cs3-report2.jpg"><br /><h6>Activity report</h6></div>
                     </div>
                     <div id="paragraph">
                         <h1>Understanding the user</h1>
@@ -114,7 +114,7 @@
                             <li><b>Specialized monitoring team</b> that uses a web UI to analyze and control the activity of the health professionals.</li>
                         </ul>
                         <div class="text-container">Designing the mobile app for health professionals was a particularly <span class="highlight">hard challenge</span> for us. Firstly, they don't like to be monitored and controlled by their employer. Secondly, they mostly belong to a group of people that are far away from being considered as tech savvies. They were very <span class="highlight">reluctant to change</span> their routine just for the sake of being monitored. We knew that if we wanted to succeed we had to be smart. We then studied their <span class="highlight">mental models</span> and designed the mobile app based on those, prioritizing its simplicity every single time.</div>
-                        <div class="hero-img"><img src="imgs/cs3-mobileflow.jpg"><br /><h6>Mobile workflow</h6></div>
+                        <div class="hero-img"><img src="../imgs/cs3-mobileflow.jpg"><br /><h6>Mobile workflow</h6></div>
                         <div class="text-container">In order to minimize the impact that the app could have on the health professionals' routines, I was heavily involved in the definition of the <span class="highlight">onboarding process</span>. We needed a way to introduce the app, teach them how to use it and answer all their questions once they have started using it. Thus, we:</div>
                         <ul>
                             <li>Distributed electronically handy brochures</li>
@@ -128,7 +128,7 @@
                         <div class="text-container">Finding a proper way to deal with the environment where health professionals use the app was a major difficulty as well. More often than not, they need to visit patients that live in very <span class="highlight">remote locations</span>, in places in the middle of nowhere where good internet connectivity is simply a luxury.</div>
                         <div class="text-container">Moreover, we needed to handle this situation without compromising the app's simplicity and also impacting the system's real-time reporting capabilities as little as possible.</div>
                         <div class="text-container">The solution we came up with was an <span class="highlight">"events queue"</span> fully transparent to the users, where an event could be the beginning of a session, the end of a session, or the impossibility of carrying out a session. Each time a health professional registers any of those events in the app it is always sent to a local queue that is constantly synchronizing data with our servers.</div>
-                        <div class="hero-img"><img src="imgs/cs3-offline.jpg"><br /><h6>Events queue in offline mode</h6></div>
+                        <div class="hero-img"><img src="../imgs/cs3-offline.jpg"><br /><h6>Events queue in offline mode</h6></div>
                     </div>
                     <div id="paragraph">
                         <h1>Constantly improving</h1>
