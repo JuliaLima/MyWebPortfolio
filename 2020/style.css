@@ -193,6 +193,22 @@ h4{
     margin-top: 7.5vh;
 }
 
+.footer-main-page{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-icons{
+    margin-top: 5vh;
+}
+
+#footer-icons img{
+    padding: 0vh 2vh;
+}
+
 .white-button{
     text-align: center;
     padding: 1.2vh 1.3vw;
@@ -415,6 +431,10 @@ h6{
     .footer-last-line{
         font-size: 1.53vw;
     }
+
+    .footer-main-page{
+        height: 60vh;
+    }
     
     .page-title{
         font-size: 4vw;
@@ -627,5 +647,9 @@ h6{
 
     #footer{
         margin-top: 8vh;
+    }
+
+    .footer-main-page{
+        height: 40vh;
     }
 }

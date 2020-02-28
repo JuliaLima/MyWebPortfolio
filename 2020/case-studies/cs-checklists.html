@@ -51,7 +51,7 @@
 
                 <div id="cs-container">
                     <div class="page-title"><b>Checklists</b></div>
-                    <div class="highlight-text-top"><i>Having a successful trades business depends on, among other things, maintaining a certain level of quality in each job. In order to preserve these processes and be effectively followed by employees, a checklist will be sufficient to achieve it.</i></div>
+                    <div class="highlight-text-top"><i>Providing tradespeople with checklists will help business owners to guide them in delivering a good serivce.</i></div>
                     <div class="hero-img"><img src="../imgs/cs1-hero.jpg"></div>
                     <div id="cs-data">
                         <div>
@@ -64,7 +64,7 @@
                             Senior UX Designer<br />
                             Head of Product Design<br />
                             Three Developers<br />
-                            QA Professional
+                            QA Engineer
                         </div>
                         <div>
                             <b>My role</b><br />
@@ -83,7 +83,6 @@
                         <h1>The context</h1>
                         <div class="text-container">Fergus is a <span class="highlight">job management software for trade businesses</span>. Its objective is to help business owners simplify their job by providing full visibility and control over the ongoing state of work.</div>
                         <div class="text-container">It was the end of February 2019 when my manager told me that I was going to start working on an <span class="highlight">interesting project</span>. As he started explaining it briefly, I realized that it was going to be really <span class="highlight">fun and challenging</span>, as it was the <span class="highlight">first</span> big project I was assigned to at Fergus.</div>
-                        <div class="text-container">I quickly got the idea of what was needed, so I started to mock things up as soon as I could. There were a lot of unknowns, but I manage to get a rough idea of its purpose. And this is how this story begins.</div>
                     </div>
                     <div id="paragraph">
                         <h1>The problem</h1>
@@ -103,6 +102,36 @@
                         <div class="text-container">I was an <span class="highlight">active member</span> during this project from day one. I was responsible for wireframing, prototyping and defining the interaction design alongside the Head of Product Design. I participated in the 5 days Design Sprint that took place at the very beginning. I also helped write the tasks and attended usability testing sessions carried out by a Senior UX Designer. During the whole process, I wrote design specs for developers and support them while implementing it. Finally, I provided design feedback over the testing period.</div>
                     </div>
                     <div id="paragraph">
+                        <h1>Research</h1>
+                        <div class="text-container">Checklists and forms became a trend within Fergus due to the increasing amount of <span class="highlight">support tickets</span>. Although most companies using the software are from New Zealand, lots of requests were from <span class="highlight">Australian companies</span>. We learned from these requests that, specifically in Australia, it is key to present certain documents to governmental entities after finishing a job.</div>
+                        <div class="text-container">This is why this project starts with a lot of research: Australia was a new market that needed to be explored and it was the perfect opportunity to customize the product for a <span class="highlight">new country</span>.</div>
+                        <h4>Requests documentation</h4>
+                        <div class="text-container">The first step was to collect and analyze the support tickets. The Product Team started collecting all this information and defined basic goals, user stories and documented all the questions we had.</div>
+                        <div class="hero-img"><img src="../imgs/cs1-jira.jpg"><br /><h6>Table with all the requests</h6></div>
+                        <h4>Surveys</h4>
+                        <div class="text-container">The next thing to do was to send surveys to Australian customers to understand their perception of Fergus. We send three surveys to:</div>
+                        <ul>
+                            <li>Existing customers</li>
+                            <li>Churn customers</li>
+                            <li>Lost opportunities</li>
+                        </ul>
+                        <div class="hero-img"><img src="../imgs/cs1-survey.jpg"><br /><h6>Survey results</h6></div>
+                        <div class="text-container">The survey was about how they perceived the software during the trial and after becoming a paid customer. We got 30 responses with interesting feedback such as <span class="highlight">terminology differences</span> and the importance of showing prices in the <span class="highlight">local currency</span>.</div>
+                        <div class="text-container">We also tried to get information about why did they decide to stop using it (churn) or what the software was missing so they didn't try it at all (lost opportunities). Although we had incentives, we didn't have responses from those customers.</div>
+                        <h4>Interviews</h4>
+                        <div class="text-container">Another big step that the product team took to get to know the Australian market, was <span class="highlight">personal and in-context interviews</span>. Two of the members went to Australia and talked to 8 business owners.</div>
+                        <div class="text-container">I was an active member after the interviews were done, as I was in charge of creating a document with the learnings. The design team met to listen to hours of recordings. The best/easiest way we found to analyze the information was through <span class="highlight">affinity mapping</span>. Each member created a post-it note with all the topics covered in the interview. Then, we grouped them and created themes.</div>
+                        <div class="hero-img"><img src="../imgs/cs1-interviews.jpg"><br /><h6>Interviews insights</h6></div>
+                        <h4>Conclusions</h4>
+                        <div class="text-container">The information collected <span class="highlight">confirmed our assumption</span> that users need to create templates to be attached to jobs. It also reaffirmed that in Australia it is very important to be compliant, even more than in New Zealand. This was a great starting point to think that delivering forms and checklists can be a good way to <span class="highlight">acquire users</span> in this country.</div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>Exploring ideas</h1>
+                        <div class="text-container">The idea behind using Fergus is, in part, to avoid paperwork, and these specific documents are involved in this fact. Another factor to consider is that the information collected in the forms or checklists is not available within Fergus, they usually scan and upload them to the job in the system.</div>
+                        <div class="text-container">All this information gave me enough insights to start designing a template builder, where the user could define the structure, basic settings, and use form elements to build the actual template. Once created the template, it will be attached to different objects as an <span class="highlight">instance</span>.</div>
+                        <div class="hero-img"><img src="../imgs/cs1-wireframe.jpg"><br /><h6>One of the first wireframes</h6></div>
+                    </div>
+                    <div id="paragraph">
                         <h1>Design sprint</h1>
                         <div class="text-container">There were a lot of questions around which was the best approach for checklists and forms:</div>
                         <ul>
@@ -114,11 +143,12 @@
                         <div class="text-container">At this point, there were a lot of assumptions and unknowns, so a Design Sprint (created by Google Ventures in 2010) was scheduled.</div>
                         <div class="text-container">The group attending was integrated by members of different departments within Fergus, from the product, support, marketing, and design team. We sat down in a meeting room from Monday to Friday in order to answer all the questions we had.</div>
                         <div class="hero-img"><img src="../imgs/cs1-design-sprint.jpg"><br /><h6>Design Sprint - day 2: Analysing how-might-we questions</h6></div>
-                        <div class="text-container">At the end of the week, we managed to test the prototype both internally and externally - two sales representatives from Fergus and two real users. The feedback showed us that we were on the right track but that we should investigate more in some very specific aspects.</div>
+                        <div class="text-container">At the end of the week, we managed to test the prototype both internally and externally - two sales representatives from Fergus and two real users. The feedback showed us that we were on the right track (template builder) but that we should investigate more in some very specific aspects.</div>
                     </div>
                     <div id="paragraph">
                         <h1>Just checklists</h1>
                         <div class="text-container">During April, our main focus was to generate a solution that covers most of the must-have that the Product Manager and the Head of Product Design defined. But from every meeting we had, we always got to the same point: <span class="highlight">are forms and checklists part of the same feature?</span>. A user story mapping session was immediately scheduled as soon as these undefined questions began to block our work. As a result, we were finally able to reach a very good understanding and therefore a good justification to separate them.</div>
+                        <div class="hero-img"><img src="../imgs/cs1-story-mapping.jpg"><br /><h6>User story mapping</h6></div>
                         <div class="text-container"><span class="highlight">Checklists are meant to establish procedures to be replicated across the jobs, whilst forms are destined to gather information for different purposes</span>. This new approach also marked a clear line between the two functionalities and it was possible to reach something that makes sense from all points of view.</div>
                     </div>
                     <div id="paragraph">
@@ -127,8 +157,17 @@
                         <div class="text-container">Having achieved this distinction between functionalities felt like a new beginning of the project. So, at this stage, all the team was able to start focusing on the final solution: checklists.</div>
                         <h4>Working together</h4>
                         <div class="text-container">In my case, I worked hard to have a prototype so we can test this approach, while the engineering team began thinking of the end architecture. Alongside this, we started doing weekly stand-ups to share the progress made by each team member. This helped us heaps as it put us on the same page at all times.</div>
-                        <h4>Usability testing</h4>
-                        <div class="text-container">By the end of March, we had done five usability testing sessions and the feedback obtained was great. Users were very satisfied with what we were proposing. It was then time to focus on the end attributes and the first MVP of the project.</div>
+                    </div>
+                    <div id="paragraph">
+                        <h1>Usability testing</h1>
+                        <div class="text-container">By the end of March, we had done five usability testing sessions and the feedback obtained was around:</div>
+                        <ul>
+                            <li><b>Template & instance</b>: It took them a little while to fully understand the difference between template and instance. But once they understood it, it made a lot of sense in their heads.</li>
+                            <li><b>Settings</b>: Users were really interested in the ability to assign checklists to different employees, set due dates and reminders.</li>
+                            <li><b>Saving pattern</b>: we were using auto-save, but users are accustomed to clicking a button every time they want to save some changes. We had to redesing this pattern.</li>
+                            <li><b>Triggers</b>: Most of the users want to trigger actions before or after the checklist is completed. This means a lot of effort, so we decided to leave it for  further milestones.</li>
+                        </ul>
+                        <div class="text-container">Users were very satisfied with what we were proposing. It was then time to focus on the end attributes and the first MVP of the project.</div>
                     </div>
                     <div id="paragraph">
                         <h1>Defining the final solution</h1>
